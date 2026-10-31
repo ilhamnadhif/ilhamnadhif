@@ -1,0 +1,174 @@
+name: CI and Production Deploy
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: portfolio-${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  # A deploy is never cancelled halfway; a newer push to main waits for it.
+  cancel-in-progress: ${{ github.ref != 'refs/heads/main' }}
+
+env:
+  IMAGE: ilhamnadhif-portfolio
+
+jobs:
+  check:
+    name: Lint, typecheck, build
+    # GitHub-hosted on purpose: this repository is public, and a self-hosted
+    # runner would let pull requests from forks run code on the server.
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - name: Fetch exact source without external action downloads
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -Eeuo pipefail
+          git init --quiet
+          git remote add origin "https://github.com/${GITHUB_REPOSITORY}.git"
+          # The token reaches git through its environment, never a command line
+          # or the remote URL that .git/config keeps.
+          GIT_TERMINAL_PROMPT=0 GIT_CONFIG_COUNT=1 \
+            GIT_CONFIG_KEY_0='http.https://github.com/.extraheader' \
+            GIT_CONFIG_VALUE_0="AUTHORIZATION: basic $(printf 'x-access-token:%s' "$GH_TOKEN" | base64 | tr -d '\n')" \
+            git fetch --force --no-tags --depth=1 origin "$GITHUB_SHA"
+          git checkout --force --detach "$GITHUB_SHA"
+
+      - name: Lint and typecheck
+        shell: bash
+        run: |
+          # Same Node image as the Dockerfile, so CI and production agree.
+          docker run --rm -v "$PWD:/app" -w /app node:22-alpine sh -euc '
+            npm ci --no-audit --no-fund
+            npm run lint
+            npx next typegen
+            npx tsc --noEmit
+          '
+
+      - name: Build image
+        # On main the deploy job builds the image it ships, so building here
+        # too would only repeat the work. It still runs when deploy is not set up.
+        if: ${{ github.event_name == 'pull_request' || vars.VPS_HOST == '' }}
+        shell: bash
+        run: docker build --tag "$IMAGE:check" .
+
+  deploy:
+    name: Deploy to VPS
+    needs: check
+    if: ${{ github.ref == 'refs/heads/main' && github.event_name != 'pull_request' && vars.VPS_HOST != '' }}
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    environment:
+      name: production
+      url: ${{ vars.SITE_URL }}
+    env:
+      VPS_HOST: ${{ vars.VPS_HOST }}
+      VPS_PORT: ${{ vars.VPS_PORT || '22' }}
+      VPS_USER: ${{ vars.VPS_USER }}
+      VPS_DEPLOY_PATH: ${{ vars.VPS_DEPLOY_PATH }}
+      VPS_SSH_KNOWN_HOSTS: ${{ vars.VPS_SSH_KNOWN_HOSTS }}
+      VPS_SSH_PRIVATE_KEY_BASE64: ${{ secrets.VPS_SSH_PRIVATE_KEY_BASE64 }}
+      SITE_URL: ${{ vars.SITE_URL }}
+    steps:
+      - name: Fetch exact source without external action downloads
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -Eeuo pipefail
+          git init --quiet
+          git remote add origin "https://github.com/${GITHUB_REPOSITORY}.git"
+          GIT_TERMINAL_PROMPT=0 GIT_CONFIG_COUNT=1 \
+            GIT_CONFIG_KEY_0='http.https://github.com/.extraheader' \
+            GIT_CONFIG_VALUE_0="AUTHORIZATION: basic $(printf 'x-access-token:%s' "$GH_TOKEN" | base64 | tr -d '\n')" \
+            git fetch --force --no-tags --depth=1 origin "$GITHUB_SHA"
+          git checkout --force --detach "$GITHUB_SHA"
+
+      - name: Validate deployment configuration
+        shell: bash
+        run: |
+          for variable in VPS_HOST VPS_PORT VPS_USER VPS_DEPLOY_PATH VPS_SSH_KNOWN_HOSTS VPS_SSH_PRIVATE_KEY_BASE64; do
+            if [[ -z "${!variable}" ]]; then
+              echo "Missing repository configuration: ${variable} (see docs/DEPLOYMENT.md)" >&2
+              exit 1
+            fi
+          done
+          if [[ ! "$VPS_DEPLOY_PATH" =~ ^/[A-Za-z0-9._/-]+$ || "$VPS_DEPLOY_PATH" == "/" ]]; then
+            echo "VPS_DEPLOY_PATH must be a dedicated absolute path without spaces." >&2
+            exit 1
+          fi
+
+      - name: Configure SSH
+        shell: bash
+        run: |
+          install -m 700 -d "$HOME/.ssh"
+          printf '%s' "$VPS_SSH_PRIVATE_KEY_BASE64" | base64 --decode >"$HOME/.ssh/deploy"
+          chmod 600 "$HOME/.ssh/deploy"
+          if ! ssh-keygen -y -P '' -f "$HOME/.ssh/deploy" >/dev/null; then
+            echo "VPS_SSH_PRIVATE_KEY_BASE64 is not a valid unencrypted OpenSSH private key." >&2
+            exit 1
+          fi
+          printf '%s\n' "$VPS_SSH_KNOWN_HOSTS" >"$HOME/.ssh/known_hosts"
+          chmod 600 "$HOME/.ssh/known_hosts"
+          {
+            echo "Host vps"
+            echo "  HostName $VPS_HOST"
+            echo "  Port $VPS_PORT"
+            echo "  User $VPS_USER"
+            echo "  IdentityFile $HOME/.ssh/deploy"
+            echo "  IdentitiesOnly yes"
+            echo "  BatchMode yes"
+            echo "  StrictHostKeyChecking yes"
+            echo "  ConnectTimeout 15"
+            echo "  ConnectionAttempts 2"
+            echo "  ServerAliveInterval 15"
+            echo "  ServerAliveCountMax 3"
+          } >"$HOME/.ssh/config"
+          chmod 600 "$HOME/.ssh/config"
+
+      - name: Build image
+        shell: bash
+        run: docker build --tag "$IMAGE:$GITHUB_SHA" .
+
+      - name: Check server disk
+        shell: bash
+        run: |
+          # The image is about 330MB and loading it needs room to unpack.
+          available_mb="$(ssh vps "df --output=avail -BM / | tail -n 1 | tr -dc 0-9")"
+          echo "Free on the server: ${available_mb}MB"
+          if (( available_mb < 1024 )); then
+            echo "Less than 1GB free on the server; free some space before deploying." >&2
+            exit 1
+          fi
+
+      - name: Upload compose file
+        shell: bash
+        run: |
+          ssh vps "mkdir -p '$VPS_DEPLOY_PATH/data'"
+          scp -q docker-compose.yml "vps:$VPS_DEPLOY_PATH/docker-compose.yml"
+
+      - name: Ship image
+        shell: bash
+        run: |
+          # Built here (16GB of RAM) rather than on the small server, which
+          # also runs other projects; only the finished image travels.
+          docker save "$IMAGE:$GITHUB_SHA" | gzip -1 | ssh vps 'gunzip | docker load'
+
+      - name: Apply release
+        shell: bash
+        run: ssh vps "bash -s -- '$VPS_DEPLOY_PATH' '$GITHUB_SHA'" <scripts/deploy.sh
+
+      - name: Check public URL
+        if: ${{ env.SITE_URL != '' }}
+        shell: bash
+        run: |
+          curl --fail --silent --show-error --output /dev/null \
+            --retry 5 --retry-delay 3 --retry-all-errors "$SITE_URL/en"
+          echo "Live at $SITE_URL"

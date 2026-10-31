@@ -1,0 +1,39 @@
+name: ilhamnadhif-portfolio
+
+services:
+  web:
+    # CI builds and loads this image on the server, tagged with the commit SHA.
+    image: ilhamnadhif-portfolio:${IMAGE_TAG:-latest}
+    build: .
+    restart: unless-stopped
+    env_file: .env
+    volumes:
+      # content.json, uploads/ and backups/ live here; back this folder up.
+      - ./data:/app/data
+    ports:
+      # WEB_PORT in .env, e.g. 3003 (public) or 127.0.0.1:3000 (behind a proxy).
+      - "${WEB_PORT:-3000}:3000"
+    mem_limit: 384m
+
+  # Optional HTTPS front for a domain: docker compose --profile https up -d
+  # Needs DOMAIN in .env and free ports 80/443.
+  caddy:
+    profiles: ["https"]
+    image: caddy:2-alpine
+    restart: unless-stopped
+    depends_on:
+      - web
+    ports:
+      - "80:80"
+      - "443:443"
+      - "443:443/udp"
+    environment:
+      DOMAIN: ${DOMAIN:-localhost}
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+
+volumes:
+  caddy_data:
+  caddy_config:

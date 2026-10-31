@@ -1,0 +1,467 @@
+{
+  "profile": {
+    "name": "Muhammad Ilham Nadhif",
+    "initials": "MI",
+    "avatar": "",
+    "headline": {
+      "en": "Backend Developer for Payments & Integrations",
+      "id": "Backend Developer untuk Pembayaran & Integrasi"
+    },
+    "subtitle": {
+      "en": "I'm Ilham. I build Go backend services and payment integrations, including Direct Carrier Billing flows that connect game products with telecom providers across multiple countries.",
+      "id": "Saya Ilham. Saya membangun layanan backend dengan Go dan integrasi pembayaran, termasuk alur Direct Carrier Billing yang menghubungkan produk game dengan operator telekomunikasi di berbagai negara."
+    },
+    "location": {
+      "en": "Bogor, West Java, Indonesia",
+      "id": "Bogor, Jawa Barat, Indonesia"
+    },
+    "email": "m.ilhamnadhif121@gmail.com",
+    "cv": ""
+  },
+  "links": {
+    "linkedin": "https://www.linkedin.com/in/muhammad-ilham-nadhif-a5b9b6203/",
+    "github": "https://github.com/ilhamnadhif"
+  },
+  "about": [
+    {
+      "id": "background",
+      "title": {
+        "en": "Background",
+        "id": "Latar Belakang"
+      },
+      "body": {
+        "en": "I started out building REST APIs and web applications with Node.js, PostgreSQL, and MongoDB, first as an intern and then through the Binar Academy Full-Stack Developer Bootcamp. Soon after, I moved to Go, working on an internal system at Digital Waqf Ventures (WAVE) with Redis, microservices, and Clean Architecture.\n\nSince 2022 I have been at Lumoshive, building backend services and features for a game portal. Alongside work, I am pursuing a Bachelor of Computer Science in Informatics Engineering at Universitas Indraprasta PGRI.",
+        "id": "Saya memulai dengan membangun REST API dan aplikasi web menggunakan Node.js, PostgreSQL, dan MongoDB, pertama sebagai siswa magang, lalu lewat Bootcamp Full-Stack Developer di Binar Academy. Tidak lama kemudian saya pindah ke Go dan ikut mengembangkan sistem internal di Digital Waqf Ventures (WAVE) dengan Redis, microservices, dan Clean Architecture.\n\nSejak 2022 saya bekerja di Lumoshive, membangun layanan backend dan fitur untuk sebuah portal game. Sambil bekerja, saya menempuh S1 Teknik Informatika di Universitas Indraprasta PGRI."
+      },
+      "tags": {
+        "en": "",
+        "id": ""
+      }
+    },
+    {
+      "id": "payments",
+      "title": {
+        "en": "Payments",
+        "id": "Pembayaran"
+      },
+      "body": {
+        "en": "Most of my work sits where products meet payments. I integrate Direct Carrier Billing (DCB), which lets people pay with their mobile phone balance, connecting game products with telecom providers in multiple countries. Each provider has its own API and its own flow, and every transaction still has to come out right.",
+        "id": "Sebagian besar pekerjaan saya ada di titik pertemuan produk dan pembayaran. Saya mengintegrasikan Direct Carrier Billing (DCB), yaitu pembayaran menggunakan pulsa, untuk menghubungkan produk game dengan operator telekomunikasi di berbagai negara. Setiap operator punya API dan alurnya sendiri, dan setiap transaksi tetap harus tercatat dengan benar."
+      },
+      "tags": {
+        "en": "Direct Carrier Billing, Multi-country Telco Integrations, Payment Gateways",
+        "id": "Direct Carrier Billing, Integrasi Operator Multi-negara, Payment Gateway"
+      }
+    },
+    {
+      "id": "stack",
+      "title": {
+        "en": "Stack",
+        "id": "Teknologi"
+      },
+      "body": {
+        "en": "Go is my main language at work. Around it I use Pub/Sub and NSQ for asynchronous workflows, Redis, and PostgreSQL or MongoDB for data. I still reach for Node.js when a project calls for it. Outside work, I build native desktop tools in Rust.",
+        "id": "Di pekerjaan, Go adalah bahasa utama saya. Di sekitarnya saya memakai Pub/Sub dan NSQ untuk alur kerja asinkron, Redis, serta PostgreSQL atau MongoDB untuk data. Node.js tetap saya pakai kalau project-nya membutuhkan. Di luar pekerjaan, saya membuat aplikasi desktop native dengan Rust."
+      },
+      "tags": {
+        "en": "Go, Rust, Pub/Sub, NSQ, Redis, PostgreSQL, MongoDB, Node.js, REST API, Microservices, Clean Architecture, Linux, Git",
+        "id": "Go, Rust, Pub/Sub, NSQ, Redis, PostgreSQL, MongoDB, Node.js, REST API, Microservices, Clean Architecture, Linux, Git"
+      }
+    }
+  ],
+  "testimonials": [],
+  "work": [
+    {
+      "id": "lumoshive",
+      "company": "Lumoshive",
+      "role": {
+        "en": "Backend Developer",
+        "id": "Backend Developer"
+      },
+      "start": "2022-08",
+      "end": "",
+      "location": {
+        "en": "West Jakarta, Indonesia",
+        "id": "Jakarta Barat, Indonesia"
+      },
+      "description": {
+        "en": "Integrate Direct Carrier Billing (DCB) payment flows that connect game products with telecom providers across multiple countries. Build backend services and product features for a game portal in Go, and use Pub/Sub to support backend workflows and service integrations.",
+        "id": "Mengintegrasikan alur pembayaran Direct Carrier Billing (DCB) yang menghubungkan produk game dengan operator telekomunikasi di berbagai negara. Membangun layanan backend dan fitur portal game dengan Go, serta memakai Pub/Sub untuk alur kerja backend dan integrasi antar layanan."
+      },
+      "logo": "",
+      "url": ""
+    },
+    {
+      "id": "wave",
+      "company": "Digital Waqf Ventures (WAVE)",
+      "role": {
+        "en": "Golang Developer",
+        "id": "Golang Developer"
+      },
+      "start": "2022-04",
+      "end": "2022-07",
+      "location": {
+        "en": "",
+        "id": ""
+      },
+      "description": {
+        "en": "Built an internal system in Go together with the team, working with Redis and microservices and applying Clean Architecture to keep the codebase maintainable.",
+        "id": "Bersama tim membangun sistem internal dengan Go, bekerja dengan Redis dan microservices, serta menerapkan Clean Architecture agar kode tetap mudah dirawat."
+      },
+      "logo": "",
+      "url": ""
+    },
+    {
+      "id": "smk-intern",
+      "company": "SMK Raden Umar Said Kudus",
+      "role": {
+        "en": "Backend Developer Intern",
+        "id": "Backend Developer (Magang)"
+      },
+      "start": "2021-01",
+      "end": "2021-07",
+      "location": {
+        "en": "",
+        "id": ""
+      },
+      "description": {
+        "en": "Built a RESTful API for an e-learning platform with Node.js and PostgreSQL, and collaborated on a game portal project with Node.js and MongoDB.",
+        "id": "Membuat RESTful API untuk platform e-learning dengan Node.js dan PostgreSQL, serta berkolaborasi dalam project portal game dengan Node.js dan MongoDB."
+      },
+      "logo": "",
+      "url": ""
+    }
+  ],
+  "projects": [
+    {
+      "id": "peler",
+      "name": "Peler",
+      "tagline": {
+        "en": "Lightweight SSH & SFTP client",
+        "id": "Klien SSH & SFTP yang ringan"
+      },
+      "description": {
+        "en": "A native SSH and SFTP client for macOS, Windows and Linux, written entirely in Rust. It starts in about 0.1 s and comes with tabs, split panes, dual-pane SFTP and a remote file editor.",
+        "id": "Klien SSH dan SFTP native untuk macOS, Windows, dan Linux, yang seluruhnya ditulis dengan Rust. Terbuka dalam sekitar 0,1 detik, dengan tab, split pane, SFTP dua panel, dan editor file remote."
+      },
+      "tags": "Rust, egui, SSH, SFTP, Cross-platform",
+      "icon": "terminal",
+      "logo": "",
+      "repo": "https://github.com/ilhamnadhif/peler",
+      "homepage": "https://github.com/ilhamnadhif/peler/releases/latest",
+      "homepageLabel": {
+        "en": "Download",
+        "id": "Unduh"
+      },
+      "slug": "peler",
+      "details": {
+        "en": "Peler is a native replacement for Electron-based SSH clients such as Electerm: one small binary, no Chromium, no Node.js. It starts in about 0.1 s, idles at 0% CPU and uses around 70 MB of memory with a session open.\n\n- **Saved connections** in nested groups, with fuzzy search and quick connect. Passwords stay in the system keychain, not in Peler's files.\n- **A real terminal** with 24-bit colour and mouse support for vim, htop and tmux, plus tabs and split panes that share one SSH connection.\n- **Dual-pane SFTP** that transfers many files in the background, with progress, speed and time left.\n- **Remote file editor**: change a config on the server and save it in place.\n- **Notices dead connections** after the network changes and offers to reconnect instead of hanging.\n- **Import** from Electerm and ~/.ssh/config, and automatic updates from GitHub releases.\n- Runs on macOS, Windows and Linux, in English and Indonesian, with light and dark themes.",
+        "id": "Peler adalah pengganti native untuk klien SSH berbasis Electron seperti Electerm: satu binary kecil, tanpa Chromium, tanpa Node.js. Terbuka dalam sekitar 0,1 detik, CPU 0% saat diam, dan memakai sekitar 70 MB memori dengan satu sesi terbuka.\n\n- **Koneksi tersimpan** dalam grup bertingkat, dengan pencarian fuzzy dan quick connect. Password disimpan di keychain sistem, bukan di file Peler.\n- **Terminal sungguhan** dengan warna 24-bit dan dukungan mouse untuk vim, htop, dan tmux, serta tab dan split pane yang berbagi satu koneksi SSH.\n- **SFTP dua panel** yang mentransfer banyak file di background, lengkap dengan progres, kecepatan, dan sisa waktu.\n- **Editor file remote**: ubah config di server lalu simpan langsung di tempat.\n- **Mendeteksi koneksi mati** setelah jaringan berubah dan menawarkan reconnect, bukan menggantung.\n- **Impor** dari Electerm dan ~/.ssh/config, serta update otomatis dari GitHub releases.\n- Berjalan di macOS, Windows, dan Linux, dalam Bahasa Inggris dan Indonesia, dengan tema terang dan gelap."
+      },
+      "screenshots": [
+        {
+          "id": "terminal",
+          "file": "/uploads/peler-terminal.webp",
+          "caption": {
+            "en": "Saved connections, tabs and split panes over one SSH connection",
+            "id": "Koneksi tersimpan, tab, dan split pane di atas satu koneksi SSH"
+          }
+        },
+        {
+          "id": "sftp",
+          "file": "/uploads/peler-sftp.webp",
+          "caption": {
+            "en": "Dual-pane SFTP with the transfers popup",
+            "id": "SFTP dua panel dengan popup transfer"
+          }
+        },
+        {
+          "id": "editor",
+          "file": "/uploads/peler-editor.webp",
+          "caption": {
+            "en": "Editing a YAML config on the server",
+            "id": "Mengedit config YAML di server"
+          }
+        }
+      ]
+    },
+    {
+      "id": "merpati",
+      "name": "Merpati",
+      "tagline": {
+        "en": "Native API client, a Postman alternative",
+        "id": "API client native, alternatif Postman"
+      },
+      "description": {
+        "en": "A lightweight API client written entirely in Rust. It handles HTTP, GraphQL, gRPC, WebSocket, Socket.IO, MQTT, MCP and AI requests, with Postman-compatible collections and scripts and a newman-compatible CLI.",
+        "id": "API client ringan yang seluruhnya ditulis dengan Rust. Mendukung request HTTP, GraphQL, gRPC, WebSocket, Socket.IO, MQTT, MCP, dan AI, dengan koleksi dan script yang kompatibel dengan Postman serta CLI yang kompatibel dengan newman."
+      },
+      "tags": "Rust, egui, HTTP, GraphQL, gRPC, WebSocket, MQTT, CLI",
+      "icon": "send",
+      "logo": "",
+      "repo": "https://github.com/ilhamnadhif/merpati",
+      "homepage": "https://github.com/ilhamnadhif/merpati/releases/latest",
+      "homepageLabel": {
+        "en": "Download",
+        "id": "Unduh"
+      },
+      "slug": "merpati",
+      "details": {
+        "en": "Merpati is a native alternative to Postman: one small binary, no Electron, no Node.js, no account. It draws its first frame in about 40 ms and uses under 90 MB of memory. Collections are plain JSON files in a folder you can commit to Git.\n\n- **HTTP, GraphQL, gRPC, WebSocket, Socket.IO, MQTT, SOAP, MCP and AI requests** in one app, each with its own tab, message log and scripts.\n- **Postman compatible**: collections, environments and pm.* scripts import and run unchanged for common use.\n- **Collection Runner and CLI** with data files, JUnit/HTML/JSON reports and newman-compatible options, so it can replace newman in CI. Performance tests with virtual users.\n- **Flows**: a visual canvas that chains requests, conditions, loops, parallel branches, scripts and AI calls.\n- **Spec Hub** for OpenAPI, AsyncAPI, Protobuf, GraphQL and Smithy files, with live validation and a live docs preview.\n- A local **mock server, webhook listener and capture proxy**, and twelve auth types from Basic and OAuth 2.0 to AWS SigV4.\n- Runs on macOS, Windows and Linux, in English and Indonesian, with light and dark themes.",
+        "id": "Merpati adalah alternatif native untuk Postman: satu binary kecil, tanpa Electron, tanpa Node.js, tanpa akun. Frame pertamanya tampil dalam sekitar 40 ms dan memakai kurang dari 90 MB memori. Koleksi berupa file JSON biasa di folder yang bisa di-commit ke Git.\n\n- **Request HTTP, GraphQL, gRPC, WebSocket, Socket.IO, MQTT, SOAP, MCP, dan AI** dalam satu aplikasi, masing-masing dengan tab, log pesan, dan script sendiri.\n- **Kompatibel dengan Postman**: koleksi, environment, dan script pm.* bisa diimpor dan dijalankan tanpa diubah untuk penggunaan umum.\n- **Collection Runner dan CLI** dengan file data, laporan JUnit/HTML/JSON, dan opsi yang kompatibel dengan newman, sehingga bisa menggantikan newman di CI. Juga ada tes performa dengan virtual user.\n- **Flows**: kanvas visual untuk merangkai request, kondisi, loop, cabang paralel, script, dan panggilan AI.\n- **Spec Hub** untuk file OpenAPI, AsyncAPI, Protobuf, GraphQL, dan Smithy, dengan validasi dan preview dokumentasi secara langsung.\n- **Mock server, penerima webhook, dan capture proxy** lokal, serta dua belas tipe autentikasi dari Basic dan OAuth 2.0 sampai AWS SigV4.\n- Berjalan di macOS, Windows, dan Linux, dalam Bahasa Inggris dan Indonesia, dengan tema terang dan gelap."
+      },
+      "screenshots": [
+        {
+          "id": "hero",
+          "file": "/uploads/merpati-hero.webp",
+          "caption": {
+            "en": "A collection, a request and its response with test results",
+            "id": "Koleksi, request, dan response beserta hasil tes"
+          }
+        },
+        {
+          "id": "runner",
+          "file": "/uploads/merpati-runner.webp",
+          "caption": {
+            "en": "Collection Runner: 10 requests, 20 tests passed",
+            "id": "Collection Runner: 10 request, 20 tes lolos"
+          }
+        },
+        {
+          "id": "flows",
+          "file": "/uploads/merpati-flows.webp",
+          "caption": {
+            "en": "A flow with three requests in parallel, a join and an AI summary",
+            "id": "Flow dengan tiga request paralel, join, dan ringkasan AI"
+          }
+        },
+        {
+          "id": "spec-hub",
+          "file": "/uploads/merpati-spec-hub.webp",
+          "caption": {
+            "en": "Spec Hub: an OpenAPI file next to its live documentation",
+            "id": "Spec Hub: file OpenAPI di samping dokumentasinya"
+          }
+        },
+        {
+          "id": "socketio",
+          "file": "/uploads/merpati-socketio.webp",
+          "caption": {
+            "en": "A Socket.IO session with ticks and an echoed message",
+            "id": "Sesi Socket.IO dengan tick dan pesan yang dipantulkan"
+          }
+        },
+        {
+          "id": "dark",
+          "file": "/uploads/merpati-dark.webp",
+          "caption": {
+            "en": "Dark theme",
+            "id": "Tema gelap"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dbiji",
+      "name": "DBiji",
+      "tagline": {
+        "en": "SQL database client, a DBeaver alternative",
+        "id": "Klien database SQL, alternatif DBeaver"
+      },
+      "description": {
+        "en": "A lightweight database client for macOS, Windows and Linux, written entirely in Rust. It connects to PostgreSQL, MySQL, SQLite, SQL Server, ClickHouse, Redis, MongoDB and more.",
+        "id": "Klien database ringan untuk macOS, Windows, dan Linux, yang seluruhnya ditulis dengan Rust. Bisa terhubung ke PostgreSQL, MySQL, SQLite, SQL Server, ClickHouse, Redis, MongoDB, dan lainnya."
+      },
+      "tags": "Rust, egui, PostgreSQL, MySQL, SQLite, ClickHouse, Redis, MongoDB",
+      "icon": "database",
+      "logo": "",
+      "repo": "https://github.com/ilhamnadhif/dbiji",
+      "homepage": "https://github.com/ilhamnadhif/dbiji/releases/latest",
+      "homepageLabel": {
+        "en": "Download",
+        "id": "Unduh"
+      },
+      "slug": "dbiji",
+      "details": {
+        "en": "DBiji is a native alternative to DBeaver: one small binary, no JVM, no Electron. It opens in about 0.1 s, idles at 0% CPU and uses around 90 MB of memory, and result sets of millions of rows never have to fit in memory.\n\n- **Many databases, one interface**: PostgreSQL, MySQL, MariaDB, SQLite, SQL Server, Oracle, CockroachDB, ClickHouse, Cassandra, Redis, MongoDB and Elasticsearch, all with drivers written in Rust.\n- **SQL editor** with schema-aware autocomplete, parameters, a formatter, explain plans and a searchable query history.\n- **Data grid** that scrolls a million rows smoothly, with inline editing saved in one transaction and foreign key navigation.\n- **Safe by default**: production connection types, confirmations for DELETE or UPDATE without WHERE, and read-only connections.\n- **Connections** through SSH tunnels, proxies and SSL, with passwords in the system keychain.\n- ER diagrams, import and export, schema and data compare, and an optional AI assistant that knows the schema.\n- Runs on macOS, Windows and Linux, in English and Indonesian, with light and dark themes.",
+        "id": "DBiji adalah alternatif native untuk DBeaver: satu binary kecil, tanpa JVM, tanpa Electron. Terbuka dalam sekitar 0,1 detik, CPU 0% saat diam, memakai sekitar 90 MB memori, dan hasil query jutaan baris tidak perlu dimuat seluruhnya ke memori.\n\n- **Banyak database, satu antarmuka**: PostgreSQL, MySQL, MariaDB, SQLite, SQL Server, Oracle, CockroachDB, ClickHouse, Cassandra, Redis, MongoDB, dan Elasticsearch, semuanya dengan driver yang ditulis dengan Rust.\n- **Editor SQL** dengan autocomplete yang memahami skema, parameter, formatter, explain plan, dan riwayat query yang bisa dicari.\n- **Grid data** yang tetap lancar menggulir sejuta baris, dengan edit langsung yang disimpan dalam satu transaksi dan navigasi foreign key.\n- **Aman secara default**: tipe koneksi production, konfirmasi untuk DELETE atau UPDATE tanpa WHERE, dan koneksi read-only.\n- **Koneksi** lewat SSH tunnel, proxy, dan SSL, dengan password di keychain sistem.\n- Diagram ER, impor dan ekspor, perbandingan skema dan data, serta asisten AI opsional yang memahami skema.\n- Berjalan di macOS, Windows, dan Linux, dalam Bahasa Inggris dan Indonesia, dengan tema terang dan gelap."
+      },
+      "screenshots": [
+        {
+          "id": "editor",
+          "file": "/uploads/dbiji-editor.webp",
+          "caption": {
+            "en": "Navigator, SQL editor and result grid",
+            "id": "Navigator, editor SQL, dan grid hasil"
+          }
+        },
+        {
+          "id": "data",
+          "file": "/uploads/dbiji-data.webp",
+          "caption": {
+            "en": "A table's data with a server-side filter and ORDER BY",
+            "id": "Data tabel dengan filter dan ORDER BY di server"
+          }
+        },
+        {
+          "id": "er-diagram",
+          "file": "/uploads/dbiji-er-diagram.webp",
+          "caption": {
+            "en": "ER diagram of the sample database",
+            "id": "Diagram ER dari database contoh"
+          }
+        }
+      ]
+    }
+  ],
+  "education": [
+    {
+      "id": "unindra",
+      "school": "Universitas Indraprasta PGRI (UNINDRA)",
+      "degree": {
+        "en": "Bachelor of Computer Science, Informatics Engineering",
+        "id": "S1 Teknik Informatika"
+      },
+      "start": "2023",
+      "end": "",
+      "logo": ""
+    },
+    {
+      "id": "smk",
+      "school": "SMK Raden Umar Said Kudus",
+      "degree": {
+        "en": "Vocational High School Diploma, Software Engineering",
+        "id": "SMK, Rekayasa Perangkat Lunak"
+      },
+      "start": "2019",
+      "end": "2022",
+      "logo": ""
+    }
+  ],
+  "certifications": [
+    {
+      "id": "binar",
+      "issuer": "Binar Academy",
+      "name": {
+        "en": "Full-Stack Web Bootcamp",
+        "id": "Bootcamp Full-Stack Web"
+      },
+      "start": "2021-01",
+      "end": "2021-07",
+      "description": {
+        "en": "A six-month Full-Stack Web program (11 chapters) with Node.js and React.js, run by Binar Academy together with SMK Raden Umar Said Kudus and supported by Djarum Foundation. Completed and graduated.",
+        "id": "Program Full-Stack Web selama enam bulan (11 chapter) dengan Node.js dan React.js, diselenggarakan Binar Academy bersama SMK Raden Umar Said Kudus dan didukung Djarum Foundation. Dinyatakan lulus."
+      },
+      "files": [
+        {
+          "id": "certificate",
+          "label": {
+            "en": "View certificate",
+            "id": "Lihat sertifikat"
+          },
+          "file": "/uploads/binar-certificate.webp"
+        },
+        {
+          "id": "report",
+          "label": {
+            "en": "View student report",
+            "id": "Lihat rapor"
+          },
+          "file": "/uploads/binar-student-report.webp"
+        }
+      ],
+      "url": "",
+      "logo": ""
+    }
+  ],
+  "approach": {
+    "items": [
+      {
+        "id": "business-flow",
+        "icon": "workflow",
+        "title": {
+          "en": "I start with the business flow",
+          "id": "Saya mulai dari alur bisnis"
+        },
+        "body": {
+          "en": "Before writing code, I map how the money and the data actually move: who calls whom, what the provider expects, and what the business needs at the end. Once the flow is clear, the API design usually follows.",
+          "id": "Sebelum menulis kode, saya memetakan bagaimana uang dan data benar-benar bergerak: siapa memanggil siapa, apa yang diharapkan provider, dan apa yang dibutuhkan bisnis di ujungnya. Kalau alurnya sudah jelas, desain API biasanya mengikuti."
+        }
+      },
+      {
+        "id": "design-for-failure",
+        "icon": "shield-check",
+        "title": {
+          "en": "I design for failure",
+          "id": "Saya merancang untuk kegagalan"
+        },
+        "body": {
+          "en": "Networks time out and callbacks arrive twice. I build with retries, idempotency, and clear status tracking, so a transaction is never lost and never charged twice.",
+          "id": "Jaringan bisa timeout dan callback bisa datang dua kali. Saya membangun dengan retry, idempotency, dan pelacakan status yang jelas, supaya transaksi tidak pernah hilang dan tidak pernah tertagih dua kali."
+        }
+      },
+      {
+        "id": "simple",
+        "icon": "boxes",
+        "title": {
+          "en": "I keep it simple and maintainable",
+          "id": "Saya menjaga kode tetap sederhana"
+        },
+        "body": {
+          "en": "Clear boundaries, small services, and readable code. The next developer, often me six months later, should understand it without a walkthrough.",
+          "id": "Batas yang jelas, layanan yang kecil, dan kode yang mudah dibaca. Developer berikutnya, yang sering kali saya sendiri enam bulan kemudian, harus bisa memahaminya tanpa perlu dijelaskan."
+        }
+      },
+      {
+        "id": "integrate",
+        "icon": "plug",
+        "title": {
+          "en": "I integrate carefully",
+          "id": "Saya berhati-hati saat integrasi"
+        },
+        "body": {
+          "en": "Every provider has its own documentation, sandbox, and quirks. I read closely, test against the sandbox, and log enough to debug production without guessing.",
+          "id": "Setiap provider punya dokumentasi, sandbox, dan keunikannya sendiri. Saya membaca dengan teliti, menguji di sandbox, dan mencatat log yang cukup supaya masalah di production bisa dilacak tanpa menebak."
+        }
+      },
+      {
+        "id": "write-down",
+        "icon": "notebook-pen",
+        "title": {
+          "en": "I write things down",
+          "id": "Saya mendokumentasikan"
+        },
+        "body": {
+          "en": "API contracts, flow diagrams, and integration notes get documented, so the team does not depend on one person's memory to keep things running.",
+          "id": "Kontrak API, diagram alur, dan catatan integrasi saya dokumentasikan, supaya tim tidak bergantung pada ingatan satu orang untuk menjaga sistem tetap berjalan."
+        }
+      },
+      {
+        "id": "learning",
+        "icon": "sprout",
+        "title": {
+          "en": "I keep learning",
+          "id": "Saya terus belajar"
+        },
+        "body": {
+          "en": "From Node.js to Go at work, and Rust for my own desktop apps. I pick up what the problem needs and stay curious about how dependable systems are built.",
+          "id": "Dari Node.js ke Go di pekerjaan, dan Rust untuk aplikasi desktop saya sendiri. Saya mempelajari apa yang dibutuhkan masalahnya dan terus penasaran bagaimana sistem yang andal dibangun."
+        }
+      }
+    ],
+    "cta": {
+      "en": "If you need someone who cares about dependable backends and payment flows, let's talk.",
+      "id": "Kalau Anda butuh orang yang peduli pada backend yang andal dan alur pembayaran yang benar, mari ngobrol."
+    }
+  },
+  "seo": {
+    "title": {
+      "en": "Muhammad Ilham Nadhif | Backend Developer",
+      "id": "Muhammad Ilham Nadhif | Backend Developer"
+    },
+    "description": {
+      "en": "Backend developer working with Go, payment integrations, and Direct Carrier Billing (DCB). Based in Bogor, Indonesia.",
+      "id": "Backend developer yang bekerja dengan Go, integrasi pembayaran, dan Direct Carrier Billing (DCB). Berbasis di Bogor, Indonesia."
+    }
+  }
+}
