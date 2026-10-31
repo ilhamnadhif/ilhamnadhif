@@ -23,7 +23,7 @@ const tabs = [
   { id: "projects", label: "Proyek" },
   { id: "education", label: "Pendidikan" },
   { id: "certifications", label: "Sertifikasi" },
-  { id: "approach", label: "Cara Kerja" },
+  { id: "approach", label: "Cara saya bekerja" },
   { id: "seo", label: "SEO" },
   { id: "backups", label: "Backup" },
 ] as const;

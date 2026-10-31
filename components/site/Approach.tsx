@@ -1,5 +1,6 @@
 "use client";
 
+import { ChevronDown } from "lucide-react";
 import { useState, useSyncExternalStore, type ReactNode } from "react";
 
 export type ApproachItem = { id: string; icon: ReactNode; title: string; body: ReactNode };
@@ -32,6 +33,7 @@ export function Approach({ items }: { items: ApproachItem[] }) {
             >
               {item.icon}
               <span className="title">{item.title}</span>
+              {interactive && <ChevronDown className="sheet-chevron" aria-hidden />}
             </button>
             <div className="sheet-body" id={`approach-${item.id}`}>
               <div>{item.body}</div>

@@ -184,6 +184,7 @@ export function Home({ content, lang }: Props) {
           <hr />
           <section id="approach">
             <h2 className="chapter">{dict.approach}</h2>
+            <p className="section-intro">{dict.approachIntro}</p>
             <Approach
               items={content.approach.items.map((item) => {
                 const Icon = icons[item.icon];
