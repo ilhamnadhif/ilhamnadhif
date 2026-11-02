@@ -34,7 +34,7 @@ npm run dev
 
 - Setiap teks punya kolom **EN** dan **ID**. Kalau salah satu kosong, website menampilkan bahasa yang lain.
 - **Paragraf**: pisahkan dengan satu baris kosong. **Link**: tulis `[teks](https://alamat.com)`.
-- **Tag**: pisahkan dengan koma, misalnya `Go, Redis, Pub/Sub`.
+- **Tag**: pisahkan dengan koma, misalnya `Go, Redis, PostgreSQL`.
 - **Tanggal**: `2022-08` atau `2022`. Kosongkan tanggal selesai untuk yang masih berjalan ("Present"/"Sekarang").
 - **Upload**: PNG, JPG, WebP, SVG (gambar) atau PDF (CV), maksimal 10MB. Foto profil otomatis dikecilkan di browser sebelum dikirim.
 - Tekan **Simpan** (atau `Cmd/Ctrl + S`). Perubahan langsung tampil tanpa build ulang.

@@ -1,4 +1,5 @@
 import { NextResponse, type NextRequest } from "next/server";
+import { projectSlugs } from "@/lib/content/project-slugs";
 import { defaultLocale, hasLocale, type Locale } from "@/lib/i18n";
 
 // Kept in sync with SESSION_COOKIE in lib/auth.ts (that module is server-only).
@@ -18,8 +19,18 @@ function preferredLocale(header: string | null): Locale {
   return ranked.find((entry) => hasLocale(entry.lang))?.lang as Locale | undefined ?? defaultLocale;
 }
 
-export function proxy(request: NextRequest) {
+export async function proxy(request: NextRequest) {
   const url = request.nextUrl.clone();
+
+  const project = url.pathname.match(/^\/([^/]+)\/projects\/([^/]+)$/);
+  if (project) {
+    const slugs = await projectSlugs();
+    if (!slugs || (hasLocale(project[1]) && slugs.has(project[2]))) return NextResponse.next();
+    // An unknown project: rewrite to a path no route matches, which renders the
+    // site's 404 page with a 404 status instead of a streamed "soft" 404.
+    url.pathname = `${url.pathname}/missing`;
+    return NextResponse.rewrite(url);
+  }
 
   if (url.pathname === "/admin") {
     // Optimistic check only: the page and every Server Action verify the session
@@ -37,5 +48,5 @@ export function proxy(request: NextRequest) {
 
 export const config = {
   // The bare root needs a language; every other page already has one in its path.
-  matcher: ["/", "/admin"],
+  matcher: ["/", "/admin", "/:lang/projects/:slug"],
 };

@@ -229,7 +229,7 @@ export function Editor({ initialContent, initialBackups }: { initialContent: Con
                   />
                   <LocalizedField
                     label="Tag"
-                    hint="Pisahkan dengan koma, contoh: Go, Redis, Pub/Sub"
+                    hint="Pisahkan dengan koma, contoh: Go, Redis, PostgreSQL"
                     value={item.tags}
                     onChange={(tags) => update({ ...item, tags })}
                   />

@@ -4,14 +4,10 @@ import { randomUUID } from "node:crypto";
 import { constants } from "node:fs";
 import fs from "node:fs/promises";
 import path from "node:path";
+import { CONTENT_FILE, DATA_DIR, UPLOADS_DIR } from "./paths";
 import { contentSchema, type Content } from "./schema";
 
-// Runtime data, not source: excluded from build-time file tracing on purpose.
-export const DATA_DIR = path.resolve(
-  /*turbopackIgnore: true*/ process.env.DATA_DIR || path.join(/*turbopackIgnore: true*/ process.cwd(), "data"),
-);
-export const UPLOADS_DIR = path.join(DATA_DIR, "uploads");
-const CONTENT_FILE = path.join(DATA_DIR, "content.json");
+export { DATA_DIR, UPLOADS_DIR };
 const BACKUPS_DIR = path.join(DATA_DIR, "backups");
 const SEED_FILE = path.join(process.cwd(), "seed", "content.json");
 const SEED_UPLOADS_DIR = path.join(process.cwd(), "seed", "uploads");

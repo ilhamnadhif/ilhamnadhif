@@ -4,12 +4,12 @@
     "initials": "MI",
     "avatar": "",
     "headline": {
-      "en": "Backend Developer for Payments & Integrations",
-      "id": "Backend Developer untuk Pembayaran & Integrasi"
+      "en": "Backend Developer",
+      "id": "Backend Developer"
     },
     "subtitle": {
-      "en": "I'm Ilham. I build Go backend services and payment integrations, including Direct Carrier Billing flows that connect game products with telecom providers across multiple countries.",
-      "id": "Saya Ilham. Saya membangun layanan backend dengan Go dan integrasi pembayaran, termasuk alur Direct Carrier Billing yang menghubungkan produk game dengan operator telekomunikasi di berbagai negara."
+      "en": "I'm Ilham, a Go developer by day and a vibe-coding enjoyer by night. At work I build backend services and carrier billing for telecom operators; after hours I ship native desktop apps in Rust with Claude.",
+      "id": "Saya Ilham, developer Go di siang hari dan penikmat vibe coding di malam hari. Di kantor saya membangun layanan backend dan carrier billing untuk operator telekomunikasi; di luar jam kerja saya merilis aplikasi desktop native dengan Rust bersama Claude."
     },
     "location": {
       "en": "Bogor, West Java, Indonesia",
@@ -30,8 +30,8 @@
         "id": "Latar Belakang"
       },
       "body": {
-        "en": "I started out building REST APIs and web applications with Node.js, PostgreSQL, and MongoDB, first as an intern and then through the Binar Academy Full-Stack Developer Bootcamp. Soon after, I moved to Go, working on an internal system at Digital Waqf Ventures (WAVE) with Redis, microservices, and Clean Architecture.\n\nSince 2022 I have been at Lumoshive, placed at PT LinkIT 360, building backend services and features for a game portal. Alongside work, I am pursuing a Bachelor of Computer Science in Informatics Engineering at Universitas Indraprasta PGRI.",
-        "id": "Saya memulai dengan membangun REST API dan aplikasi web menggunakan Node.js, PostgreSQL, dan MongoDB, pertama sebagai siswa magang, lalu lewat Bootcamp Full-Stack Developer di Binar Academy. Tidak lama kemudian saya pindah ke Go dan ikut mengembangkan sistem internal di Digital Waqf Ventures (WAVE) dengan Redis, microservices, dan Clean Architecture.\n\nSejak 2022 saya bekerja di Lumoshive dengan penempatan di PT LinkIT 360, membangun layanan backend dan fitur untuk sebuah portal game. Sambil bekerja, saya menempuh S1 Teknik Informatika di Universitas Indraprasta PGRI."
+        "en": "I started out building REST APIs and web applications with Node.js, PostgreSQL, and MongoDB, first as an intern and then through the Binar Academy Full-Stack Developer Bootcamp. Soon after, I moved to Go, working on an internal system at Digital Waqf Ventures (WAVE) with Redis and Clean Architecture, while learning microservices on my own.\n\nSince 2022 I have been at Lumoshive, placed at PT LinkIT 360, building Go backend services for mobile value-added services (VAS) and carrier billing with telecom operators abroad, such as LTC and TPLUS. Alongside work, I am pursuing a Bachelor of Computer Science in Informatics Engineering at Universitas Indraprasta PGRI.",
+        "id": "Saya memulai dengan membangun REST API dan aplikasi web menggunakan Node.js, PostgreSQL, dan MongoDB, pertama sebagai siswa magang, lalu lewat Bootcamp Full-Stack Developer di Binar Academy. Tidak lama kemudian saya pindah ke Go dan ikut mengembangkan sistem internal di Digital Waqf Ventures (WAVE) dengan Redis dan Clean Architecture, sambil belajar microservices secara mandiri.\n\nSejak 2022 saya bekerja di Lumoshive dengan penempatan di PT LinkIT 360, membangun layanan backend dengan Go untuk layanan VAS (value-added services) dan carrier billing bersama operator telekomunikasi luar negeri, seperti LTC dan TPLUS. Sambil bekerja, saya menempuh S1 Teknik Informatika di Universitas Indraprasta PGRI."
       },
       "tags": {
         "en": "",
@@ -45,12 +45,12 @@
         "id": "Teknologi"
       },
       "body": {
-        "en": "Go is my main language at work. Around it I use Pub/Sub and NSQ for asynchronous workflows, Redis, and PostgreSQL or MongoDB for data. I still reach for Node.js when a project calls for it. Outside work, I build native desktop tools in Rust.",
-        "id": "Di pekerjaan, Go adalah bahasa utama saya. Di sekitarnya saya memakai Pub/Sub dan NSQ untuk alur kerja asinkron, Redis, serta PostgreSQL atau MongoDB untuk data. Node.js tetap saya pakai kalau project-nya membutuhkan. Di luar pekerjaan, saya membuat aplikasi desktop native dengan Rust."
+        "en": "Go is my main language. Around it I use PostgreSQL for data, Redis, and NSQ for asynchronous workflows, and I ship services with Docker and CI/CD pipelines. Outside work, I build native desktop tools in Rust together with Claude, an AI coding assistant.",
+        "id": "Go adalah bahasa utama saya. Di sekitarnya saya memakai PostgreSQL untuk data, Redis, dan NSQ untuk alur kerja asinkron, lalu merilis layanan dengan Docker dan pipeline CI/CD. Di luar pekerjaan, saya membuat aplikasi desktop native dengan Rust bersama Claude, asisten AI untuk coding."
       },
       "tags": {
-        "en": "Go, Rust, Pub/Sub, NSQ, Redis, PostgreSQL, MongoDB, Node.js, REST API, Microservices, Clean Architecture, Linux, Git",
-        "id": "Go, Rust, Pub/Sub, NSQ, Redis, PostgreSQL, MongoDB, Node.js, REST API, Microservices, Clean Architecture, Linux, Git"
+        "en": "Go, PostgreSQL, Redis, NSQ, Docker, CI/CD, REST API, Clean Architecture, Linux, Git",
+        "id": "Go, PostgreSQL, Redis, NSQ, Docker, CI/CD, REST API, Clean Architecture, Linux, Git"
       }
     }
   ],
@@ -70,8 +70,8 @@
         "id": "Penempatan di PT LinkIT 360, Jakarta"
       },
       "description": {
-        "en": "- Integrate Direct Carrier Billing (DCB) payment flows that connect game products with telecom providers across multiple countries.\n- Build backend services and product features for a game portal in Go.\n- Use Pub/Sub to support backend workflows and service integrations.\n- Turn business requirements into maintainable APIs and dependable backend integrations.",
-        "id": "- Mengintegrasikan alur pembayaran Direct Carrier Billing (DCB) yang menghubungkan produk game dengan operator telekomunikasi di berbagai negara.\n- Membangun layanan backend dan fitur portal game dengan Go.\n- Memakai Pub/Sub untuk alur kerja backend dan integrasi antar layanan.\n- Menerjemahkan kebutuhan bisnis menjadi API yang mudah dirawat dan integrasi backend yang andal."
+        "en": "- Build Go backend services for mobile value-added services (VAS) with telecom operators abroad, such as LTC and TPLUS.\n- Integrate Direct Carrier Billing (DCB) payment flows, so subscribers pay with their mobile balance.\n- Turn business requirements into maintainable APIs and dependable backend integrations.",
+        "id": "- Membangun layanan backend dengan Go untuk layanan VAS (value-added services) bersama operator telekomunikasi luar negeri, seperti LTC dan TPLUS.\n- Mengintegrasikan alur pembayaran Direct Carrier Billing (DCB), sehingga pelanggan membayar dengan pulsa.\n- Menerjemahkan kebutuhan bisnis menjadi API yang mudah dirawat dan integrasi backend yang andal."
       },
       "logo": "/uploads/logo-lumoshive.webp",
       "url": ""
@@ -90,8 +90,8 @@
         "id": ""
       },
       "description": {
-        "en": "Built an internal system in Go together with the team, working with Redis and microservices and applying Clean Architecture to keep the codebase maintainable.",
-        "id": "Bersama tim membangun sistem internal dengan Go, bekerja dengan Redis dan microservices, serta menerapkan Clean Architecture agar kode tetap mudah dirawat."
+        "en": "Built an internal system in Go together with the team, working with Redis and applying Clean Architecture to keep the codebase maintainable.",
+        "id": "Bersama tim membangun sistem internal dengan Go, bekerja dengan Redis, serta menerapkan Clean Architecture agar kode tetap mudah dirawat."
       },
       "logo": "",
       "url": ""
@@ -119,31 +119,100 @@
   ],
   "projects": [
     {
-      "id": "websearch-tool",
-      "name": "websearch-tool",
+      "id": "bantuin",
+      "name": "Bantuin AI",
       "tagline": {
-        "en": "Go toolkit for LLM web search",
-        "id": "Toolkit Go untuk pencarian web LLM"
+        "en": "Telegram AI assistant for reminders and expenses",
+        "id": "Asisten AI di Telegram untuk pengingat dan catatan keuangan"
       },
       "description": {
-        "en": "A Go toolkit that gives an LLM two tools, web search and page reading, over plain HTTP. It falls back across five search engines, filters out decoy results and guards against SSRF.",
-        "id": "Toolkit Go yang memberi LLM dua tool, pencarian web dan pembacaan halaman, cukup lewat HTTP biasa. Berpindah otomatis antar lima mesin pencari, menyaring hasil palsu, dan terlindung dari SSRF."
+        "en": "A live, paid Telegram assistant for everyday users in Indonesia: write like a normal chat, and Bantuin remembers reminders, bills, medicine schedules and expenses. Built with a Go API and worker, PostgreSQL, Redis queues and QRIS payments.",
+        "id": "Asisten Telegram berbayar yang sudah live untuk pengguna sehari-hari di Indonesia: cukup tulis seperti chat biasa, Bantuin yang mengingat pengingat, tagihan, jadwal obat, dan pengeluaran. Dibangun dengan API dan worker Go, PostgreSQL, antrean Redis, dan pembayaran QRIS."
       },
-      "tags": "Go, LLM Tool Calling, Web Scraping, OpenRouter, SSRF Protection",
-      "icon": "globe",
-      "logo": "",
-      "repo": "https://github.com/ilhamnadhif/websearch-tool",
-      "homepage": "https://pkg.go.dev/github.com/ilhamnadhif/websearch-tool",
+      "tags": "Go, PostgreSQL, Redis, Asynq, Telegram Bot API, QRIS, Next.js, Docker",
+      "icon": "send",
+      "logo": "/uploads/bantuin-icon.webp",
+      "repo": "",
+      "homepage": "https://bantuinai.com",
       "homepageLabel": {
-        "en": "Go docs",
-        "id": "Dokumentasi Go"
+        "en": "bantuinai.com",
+        "id": "bantuinai.com"
       },
-      "slug": "websearch-tool",
+      "slug": "bantuin",
       "details": {
-        "en": "websearch-tool gives an LLM two tools, **web search** and **page reading**, as two small Go packages. Everything runs over plain HTTP: no headless browser and no search server to host. A reference example wires both into an OpenAI-compatible tool-calling loop through OpenRouter.\n\n- **Engine chain**: Brave (with an optional API key), Bing, DuckDuckGo, Bing News and Wikipedia are asked in turn, and the first answer that is actually about the query wins.\n- **Built for scrapers that fail quietly**: an empty \"no results\" page counts as a miss, decoy result pages are caught by checking each answer against the words of the query, and an engine that answers with a CAPTCHA or a rate limit is put on a cool-down.\n- **Pacing and caching**: each engine has its own request spacing, a slow engine never delays the others, and answers are cached for 10 minutes.\n- **Page reading**: turns a page into structured text with headings, list items and table rows, puts JSON-LD facts such as prices and opening hours first, and with a focus question returns only the passages that answer it. PDFs are supported.\n- **Safe by default**: an SSRF guard refuses private, loopback and cloud metadata addresses at dial time, so neither DNS rebinding nor a redirect gets around it, and oversized bodies are rejected before parsing.",
-        "id": "websearch-tool memberi LLM dua tool, **pencarian web** dan **pembacaan halaman**, dalam bentuk dua package Go yang kecil. Semuanya berjalan lewat HTTP biasa: tanpa headless browser dan tanpa server pencarian yang perlu di-host. Contoh referensinya menghubungkan keduanya ke loop tool-calling yang kompatibel dengan OpenAI lewat OpenRouter.\n\n- **Rantai mesin pencari**: Brave (dengan API key opsional), Bing, DuckDuckGo, Bing News, dan Wikipedia ditanya bergantian, dan jawaban pertama yang benar-benar membahas kueri yang dipakai.\n- **Dirancang untuk scraper yang gagal diam-diam**: halaman \"tidak ada hasil\" dihitung sebagai gagal, halaman hasil palsu dikenali dengan mencocokkan setiap jawaban dengan kata-kata kueri, dan mesin yang membalas dengan CAPTCHA atau rate limit diistirahatkan dulu.\n- **Pengaturan jeda dan cache**: setiap mesin punya jeda request sendiri, mesin yang lambat tidak menahan yang lain, dan jawaban di-cache selama 10 menit.\n- **Pembacaan halaman**: mengubah halaman menjadi teks terstruktur berisi heading, item list, dan baris tabel, menaruh data JSON-LD seperti harga dan jam buka di depan, dan dengan pertanyaan fokus hanya mengembalikan bagian yang menjawabnya. PDF juga didukung.\n- **Aman sejak awal**: pelindung SSRF menolak alamat privat, loopback, dan metadata cloud saat koneksi dibuat, sehingga DNS rebinding maupun redirect tidak bisa mengakalinya, dan body yang terlalu besar ditolak sebelum diproses."
+        "en": "Bantuin is a Telegram-first personal assistant for everyday users in Indonesia. People open the bot, press Start and write like a normal chat; Bantuin remembers reminders, bills and instalments, medicine schedules and expenses, and reads photos, PDFs and voice notes sent in the chat. It is a live product with a free plan and a paid plan settled over QRIS.\n\n- **Go backend**: an API, a background worker and an explicit migration job, all built from one codebase. PostgreSQL is the source of truth; Redis and Asynq run the queues and can always be rebuilt.\n- **Retries that never act twice**: creates, payments, calendar changes and automations carry idempotency keys, so a retried request returns the first result instead of doing the work again.\n- **Careful delivery**: a Telegram message that may or may not have arrived is recorded as uncertain instead of being resent blindly, so a reminder never shows up twice.\n- **QRIS payments**: through SumoPod, with one payment link per order and settlement by webhook.\n- **AI with guardrails**: one model reads each message and picks from an allowlist of tools, while a multimodal model (Xiaomi MiMo) reads images, documents, audio and video.\n- **Privacy by design**: attachments are read in memory and never stored, and logs never contain message content, tokens or payment secrets.\n- Recurring automations, Google Calendar sync and news summaries with source links, plus a Next.js dashboard. Deployed with Docker Compose behind Caddy, with encrypted database backups.",
+        "id": "Bantuin adalah asisten pribadi berbasis Telegram untuk pengguna sehari-hari di Indonesia. Pengguna cukup membuka bot, menekan Start, lalu menulis seperti chat biasa; Bantuin mengingat pengingat, tagihan dan cicilan, jadwal obat, serta pengeluaran, dan bisa membaca foto, PDF, dan pesan suara yang dikirim di chat. Bantuin sudah live dengan paket gratis dan paket berbayar lewat QRIS.\n\n- **Backend Go**: API, worker latar belakang, dan job migrasi terpisah, semuanya dari satu codebase. PostgreSQL menjadi sumber kebenaran; Redis dan Asynq menjalankan antrean dan selalu bisa dibangun ulang.\n- **Retry yang tidak pernah dobel**: pembuatan data, pembayaran, perubahan kalender, dan otomasi membawa idempotency key, sehingga request yang diulang mengembalikan hasil pertama, bukan mengerjakan ulang.\n- **Pengiriman yang hati-hati**: pesan Telegram yang belum pasti sampai dicatat sebagai tidak pasti, bukan dikirim ulang begitu saja, sehingga pengingat tidak pernah datang dua kali.\n- **Pembayaran QRIS**: lewat SumoPod, dengan satu link pembayaran per pesanan dan penyelesaian lewat webhook.\n- **AI dengan batasan**: satu model membaca setiap pesan dan memilih dari daftar tool yang diizinkan, sementara model multimodal (Xiaomi MiMo) membaca gambar, dokumen, audio, dan video.\n- **Privasi sejak awal**: lampiran dibaca di memori dan tidak pernah disimpan, dan log tidak pernah berisi isi pesan, token, atau rahasia pembayaran.\n- Otomasi berulang, sinkronisasi Google Calendar, dan ringkasan berita dengan tautan sumber, ditambah dashboard Next.js. Di-deploy dengan Docker Compose di belakang Caddy, dengan backup database terenkripsi."
       },
-      "screenshots": []
+      "screenshots": [
+        {
+          "id": "home",
+          "file": "/uploads/bantuin-home.webp",
+          "caption": {
+            "en": "Landing page: write once, Bantuin remembers",
+            "id": "Halaman utama: bilang sekali, Bantuin yang ingat"
+          }
+        },
+        {
+          "id": "features",
+          "file": "/uploads/bantuin-features.webp",
+          "caption": {
+            "en": "Reminders, bills, medicine schedules and expenses in one chat",
+            "id": "Pengingat, tagihan, jadwal obat, dan pengeluaran dalam satu chat"
+          }
+        },
+        {
+          "id": "compare",
+          "file": "/uploads/bantuin-compare.webp",
+          "caption": {
+            "en": "Unlike a plain chatbot, the reminder arrives on its own",
+            "id": "Beda dengan chatbot biasa, pengingatnya datang sendiri"
+          }
+        },
+        {
+          "id": "pricing",
+          "file": "/uploads/bantuin-pricing.webp",
+          "caption": {
+            "en": "A free plan and Bantuin Plus, paid over QRIS",
+            "id": "Paket gratis dan Bantuin Plus, dibayar lewat QRIS"
+          }
+        }
+      ]
+    },
+    {
+      "id": "opp-management",
+      "name": "OPP Management",
+      "tagline": {
+        "en": "Attendance and site operations app",
+        "id": "Aplikasi absensi dan operasional lapangan"
+      },
+      "description": {
+        "en": "A server-rendered Go web app built for Orecon Putra Perkasa: clock in and out with camera and location, leave approvals, and daily site reports for production, fuel and heavy-equipment hour meters, stored in Google Sheets.",
+        "id": "Aplikasi web Go server-rendered untuk Orecon Putra Perkasa: absen masuk dan pulang dengan kamera dan lokasi, persetujuan cuti, serta laporan harian lapangan untuk produksi, BBM, dan hour meter alat berat, tersimpan di Google Sheets."
+      },
+      "tags": "Go, HTML Templates, JavaScript, Google Sheets API, Docker",
+      "icon": "app-window",
+      "logo": "/uploads/opp-management-icon.webp",
+      "repo": "https://github.com/ilhamnadhif/oop-management",
+      "homepage": "",
+      "homepageLabel": {
+        "en": "",
+        "id": ""
+      },
+      "slug": "opp-management",
+      "details": {
+        "en": "OPP Management is the attendance and field operations app built for the teams of Orecon Putra Perkasa. It is a server-rendered Go application with HTML templates and plain JavaScript, so it stays light on phones in the field, and it keeps its data in Google Sheets that the office already works with.\n\n- **Clock in and out** with the phone camera and browser location; selfies are compressed before they are stored.\n- **Leave requests** for every role, editable or cancellable while pending, with supporting evidence for sick leave, plus an HR overview and approvals for HR and management.\n- **Production reports**: production, units, receipts and reconciliation, report exports, and receipt scanning that turns a photo of a receipt into editable line items with an AI vision model.\n- **Fuel in and out**: vendor deliveries with four photos as proof, and refuelling per machine from flow-meter readings, with litres computed from the difference.\n- **Hour meter input** per shift and unit, where the rest of the shift must be split into standby and breakdown minutes.\n- **Google Sheets as the database**, with the schema created and checked at startup, bcrypt passwords and recorded logins.",
+        "id": "OPP Management adalah aplikasi absensi dan operasional lapangan yang dibangun untuk tim Orecon Putra Perkasa. Aplikasinya server-rendered dengan Go, template HTML, dan JavaScript biasa, sehingga tetap ringan di HP di lapangan, dan datanya tersimpan di Google Sheets yang sudah dipakai kantor.\n\n- **Absen masuk dan pulang** dengan kamera HP dan lokasi browser; foto selfie dikompresi sebelum disimpan.\n- **Pengajuan cuti** untuk semua role, bisa diubah atau dibatalkan selama menunggu, dengan bukti pendukung untuk cuti sakit, ditambah ringkasan HR dan persetujuan untuk HR dan manajemen.\n- **Laporan produksi**: produksi, unit, nota dan rekonsiliasi, ekspor laporan, serta scan struk yang mengubah foto struk menjadi daftar barang yang bisa diedit dengan model AI visual.\n- **BBM masuk dan keluar**: kiriman vendor dengan empat foto bukti, dan pengisian per alat berat dari pembacaan flow meter, dengan liter dihitung dari selisihnya.\n- **Input hour meter** per shift dan unit, dengan sisa waktu shift wajib dipecah ke menit standby dan breakdown.\n- **Google Sheets sebagai database**, dengan skema yang dibuat dan diperiksa saat aplikasi start, password bcrypt, dan pencatatan login."
+      },
+      "screenshots": [
+        {
+          "id": "login",
+          "file": "/uploads/opp-management-login.webp",
+          "caption": {
+            "en": "Sign-in page, with registration for new employees",
+            "id": "Halaman masuk, dengan pendaftaran untuk karyawan baru"
+          }
+        }
+      ]
     },
     {
       "id": "ternaryshell",
