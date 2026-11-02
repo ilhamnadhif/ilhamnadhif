@@ -154,19 +154,6 @@ export const contentSchema = z.object({
     )
     .max(30)
     .default([]),
-  approach: z.object({
-    items: z
-      .array(
-        z.object({
-          id,
-          icon: z.enum(iconNames),
-          title: localized(120),
-          body: localized(1000),
-        }),
-      )
-      .max(12),
-    cta: localized(400),
-  }),
   seo: z.object({
     title: localized(120),
     description: localized(300),

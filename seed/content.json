@@ -39,21 +39,6 @@
       }
     },
     {
-      "id": "payments",
-      "title": {
-        "en": "Payments",
-        "id": "Pembayaran"
-      },
-      "body": {
-        "en": "Most of my work sits where products meet payments. I integrate Direct Carrier Billing (DCB), which lets people pay with their mobile phone balance, connecting game products with telecom providers in multiple countries. Each provider has its own API and its own flow, and every transaction still has to come out right.",
-        "id": "Sebagian besar pekerjaan saya ada di titik pertemuan produk dan pembayaran. Saya mengintegrasikan Direct Carrier Billing (DCB), yaitu pembayaran menggunakan pulsa, untuk menghubungkan produk game dengan operator telekomunikasi di berbagai negara. Setiap operator punya API dan alurnya sendiri, dan setiap transaksi tetap harus tercatat dengan benar."
-      },
-      "tags": {
-        "en": "Direct Carrier Billing, Multi-country Telco Integrations, Payment Gateways",
-        "id": "Direct Carrier Billing, Integrasi Operator Multi-negara, Payment Gateway"
-      }
-    },
-    {
       "id": "stack",
       "title": {
         "en": "Stack",
@@ -374,86 +359,6 @@
       "logo": ""
     }
   ],
-  "approach": {
-    "items": [
-      {
-        "id": "business-flow",
-        "icon": "workflow",
-        "title": {
-          "en": "I start with the business flow",
-          "id": "Saya mulai dari alur bisnis"
-        },
-        "body": {
-          "en": "Before writing code, I map how the money and the data actually move: who calls whom, what the provider expects, and what the business needs at the end. Once the flow is clear, the API design usually follows.",
-          "id": "Sebelum menulis kode, saya memetakan bagaimana uang dan data benar-benar bergerak: siapa memanggil siapa, apa yang diharapkan provider, dan apa yang dibutuhkan bisnis di ujungnya. Kalau alurnya sudah jelas, desain API biasanya mengikuti."
-        }
-      },
-      {
-        "id": "design-for-failure",
-        "icon": "shield-check",
-        "title": {
-          "en": "I design for failure",
-          "id": "Saya merancang untuk kegagalan"
-        },
-        "body": {
-          "en": "Networks time out and callbacks arrive twice. I build with retries, idempotency, and clear status tracking, so a transaction is never lost and never charged twice.",
-          "id": "Jaringan bisa timeout dan callback bisa datang dua kali. Saya membangun dengan retry, idempotency, dan pelacakan status yang jelas, supaya transaksi tidak pernah hilang dan tidak pernah tertagih dua kali."
-        }
-      },
-      {
-        "id": "simple",
-        "icon": "boxes",
-        "title": {
-          "en": "I keep it simple and maintainable",
-          "id": "Saya menjaga kode tetap sederhana"
-        },
-        "body": {
-          "en": "Clear boundaries, small services, and readable code. The next developer, often me six months later, should understand it without a walkthrough.",
-          "id": "Batas yang jelas, layanan yang kecil, dan kode yang mudah dibaca. Developer berikutnya, yang sering kali saya sendiri enam bulan kemudian, harus bisa memahaminya tanpa perlu dijelaskan."
-        }
-      },
-      {
-        "id": "integrate",
-        "icon": "plug",
-        "title": {
-          "en": "I integrate carefully",
-          "id": "Saya berhati-hati saat integrasi"
-        },
-        "body": {
-          "en": "Every provider has its own documentation, sandbox, and quirks. I read closely, test against the sandbox, and log enough to debug production without guessing.",
-          "id": "Setiap provider punya dokumentasi, sandbox, dan keunikannya sendiri. Saya membaca dengan teliti, menguji di sandbox, dan mencatat log yang cukup supaya masalah di production bisa dilacak tanpa menebak."
-        }
-      },
-      {
-        "id": "write-down",
-        "icon": "notebook-pen",
-        "title": {
-          "en": "I write things down",
-          "id": "Saya mendokumentasikan"
-        },
-        "body": {
-          "en": "API contracts, flow diagrams, and integration notes get documented, so the team does not depend on one person's memory to keep things running.",
-          "id": "Kontrak API, diagram alur, dan catatan integrasi saya dokumentasikan, supaya tim tidak bergantung pada ingatan satu orang untuk menjaga sistem tetap berjalan."
-        }
-      },
-      {
-        "id": "learning",
-        "icon": "sprout",
-        "title": {
-          "en": "I keep learning",
-          "id": "Saya terus belajar"
-        },
-        "body": {
-          "en": "From Node.js to Go at work, and Rust for my own desktop apps. I pick up what the problem needs and stay curious about how dependable systems are built.",
-          "id": "Dari Node.js ke Go di pekerjaan, dan Rust untuk aplikasi desktop saya sendiri. Saya mempelajari apa yang dibutuhkan masalahnya dan terus penasaran bagaimana sistem yang andal dibangun."
-        }
-      }
-    ],
-    "cta": {
-      "en": "If you need someone who cares about dependable backends and payment flows, let's talk.",
-      "id": "Kalau Anda butuh orang yang peduli pada backend yang andal dan alur pembayaran yang benar, mari ngobrol."
-    }
-  },
   "seo": {
     "title": {
       "en": "Muhammad Ilham Nadhif | Backend Developer",

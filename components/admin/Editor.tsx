@@ -23,7 +23,6 @@ const tabs = [
   { id: "projects", label: "Proyek" },
   { id: "education", label: "Pendidikan" },
   { id: "certifications", label: "Sertifikasi" },
-  { id: "approach", label: "Cara saya bekerja" },
   { id: "seo", label: "SEO" },
   { id: "backups", label: "Backup" },
 ] as const;
@@ -543,44 +542,6 @@ export function Editor({ initialContent, initialBackups }: { initialContent: Con
               </>
             )}
           />
-        )}
-
-        {tab === "approach" && (
-          <>
-            <ListEditor
-              items={content.approach.items}
-              onChange={(items) => set("approach", { ...content.approach, items })}
-              addLabel="Tambah poin"
-              summary={(item) => item.title.en || item.title.id}
-              create={() => ({ id: newId(), icon: "lightbulb" as const, title: emptyLocalized(), body: emptyLocalized() })}
-              render={(item, update) => (
-                <>
-                  <Field label="Ikon">
-                    <select
-                      className="input"
-                      value={item.icon}
-                      onChange={(event) => update({ ...item, icon: event.target.value as typeof item.icon })}
-                    >
-                      {iconNames.map((name) => (
-                        <option key={name} value={name}>
-                          {name}
-                        </option>
-                      ))}
-                    </select>
-                  </Field>
-                  <LocalizedField label="Judul" value={item.title} onChange={(title) => update({ ...item, title })} />
-                  <LocalizedField label="Isi" rows={4} hint={TEXT_HINT} value={item.body} onChange={(body) => update({ ...item, body })} />
-                </>
-              )}
-            />
-            <LocalizedField
-              label="Ajakan di bawah daftar"
-              rows={2}
-              hint="Kalimat “Email saya …” ditambahkan otomatis"
-              value={content.approach.cta}
-              onChange={(cta) => set("approach", { ...content.approach, cta })}
-            />
-          </>
         )}
 
         {tab === "seo" && (

@@ -3,7 +3,6 @@ import { ArrowRight, ArrowUpRight, Award, BriefcaseBusiness, FileDown, FileText,
 import { Fragment } from "react";
 import { projectSlug, type Content, type Project } from "@/lib/content/schema";
 import { dictionary, formatPeriod, t, type Locale } from "@/lib/i18n";
-import { Approach } from "./Approach";
 import { MediaViewer } from "./MediaViewer";
 import { GitHubMark, icons } from "./icons";
 import { RichText, splitTags } from "./RichText";
@@ -11,7 +10,7 @@ import { RichText, splitTags } from "./RichText";
 type Props = { content: Content; lang: Locale };
 
 export function Home({ content, lang }: Props) {
-  const { profile, links } = content;
+  const { links } = content;
   const dict = dictionary[lang];
 
   return (
@@ -177,38 +176,6 @@ export function Home({ content, lang }: Props) {
             })}
           </ul>
         </section>
-      )}
-
-      {content.approach.items.length > 0 && (
-        <>
-          <hr />
-          <section id="approach">
-            <h2 className="chapter">{dict.approach}</h2>
-            <p className="section-intro">{dict.approachIntro}</p>
-            <Approach
-              items={content.approach.items.map((item) => {
-                const Icon = icons[item.icon];
-                return {
-                  id: item.id,
-                  icon: <Icon className="icon" aria-hidden />,
-                  title: t(item.title, lang),
-                  body: <RichText text={t(item.body, lang)} />,
-                };
-              })}
-            />
-            <div className="extra">
-              <p>
-                {t(content.approach.cta, lang)}
-                {profile.email && (
-                  <>
-                    <br />
-                    {dict.myEmailIs} <a href={`mailto:${profile.email}`}>{profile.email}</a>.
-                  </>
-                )}
-              </p>
-            </div>
-          </section>
-        </>
       )}
 
       <hr />
