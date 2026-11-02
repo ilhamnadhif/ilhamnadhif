@@ -70,8 +70,8 @@
         "id": "Jakarta Barat, Indonesia"
       },
       "description": {
-        "en": "Integrate Direct Carrier Billing (DCB) payment flows that connect game products with telecom providers across multiple countries. Build backend services and product features for a game portal in Go, and use Pub/Sub to support backend workflows and service integrations.",
-        "id": "Mengintegrasikan alur pembayaran Direct Carrier Billing (DCB) yang menghubungkan produk game dengan operator telekomunikasi di berbagai negara. Membangun layanan backend dan fitur portal game dengan Go, serta memakai Pub/Sub untuk alur kerja backend dan integrasi antar layanan."
+        "en": "- Integrate Direct Carrier Billing (DCB) payment flows that connect game products with telecom providers across multiple countries.\n- Build backend services and product features for a game portal in Go.\n- Use Pub/Sub to support backend workflows and service integrations.\n- Turn business requirements into maintainable APIs and dependable backend integrations.",
+        "id": "- Mengintegrasikan alur pembayaran Direct Carrier Billing (DCB) yang menghubungkan produk game dengan operator telekomunikasi di berbagai negara.\n- Membangun layanan backend dan fitur portal game dengan Go.\n- Memakai Pub/Sub untuk alur kerja backend dan integrasi antar layanan.\n- Menerjemahkan kebutuhan bisnis menjadi API yang mudah dirawat dan integrasi backend yang andal."
       },
       "logo": "",
       "url": ""
@@ -118,6 +118,33 @@
     }
   ],
   "projects": [
+    {
+      "id": "websearch-tool",
+      "name": "websearch-tool",
+      "tagline": {
+        "en": "Go toolkit for LLM web search",
+        "id": "Toolkit Go untuk pencarian web LLM"
+      },
+      "description": {
+        "en": "A Go toolkit that gives an LLM two tools, web search and page reading, over plain HTTP. It falls back across five search engines, filters out decoy results and guards against SSRF.",
+        "id": "Toolkit Go yang memberi LLM dua tool, pencarian web dan pembacaan halaman, cukup lewat HTTP biasa. Berpindah otomatis antar lima mesin pencari, menyaring hasil palsu, dan terlindung dari SSRF."
+      },
+      "tags": "Go, LLM Tool Calling, Web Scraping, OpenRouter, SSRF Protection",
+      "icon": "globe",
+      "logo": "",
+      "repo": "https://github.com/ilhamnadhif/websearch-tool",
+      "homepage": "https://pkg.go.dev/github.com/ilhamnadhif/websearch-tool",
+      "homepageLabel": {
+        "en": "Go docs",
+        "id": "Dokumentasi Go"
+      },
+      "slug": "websearch-tool",
+      "details": {
+        "en": "websearch-tool gives an LLM two tools, **web search** and **page reading**, as two small Go packages. Everything runs over plain HTTP: no headless browser and no search server to host. A reference example wires both into an OpenAI-compatible tool-calling loop through OpenRouter.\n\n- **Engine chain**: Brave (with an optional API key), Bing, DuckDuckGo, Bing News and Wikipedia are asked in turn, and the first answer that is actually about the query wins.\n- **Built for scrapers that fail quietly**: an empty \"no results\" page counts as a miss, decoy result pages are caught by checking each answer against the words of the query, and an engine that answers with a CAPTCHA or a rate limit is put on a cool-down.\n- **Pacing and caching**: each engine has its own request spacing, a slow engine never delays the others, and answers are cached for 10 minutes.\n- **Page reading**: turns a page into structured text with headings, list items and table rows, puts JSON-LD facts such as prices and opening hours first, and with a focus question returns only the passages that answer it. PDFs are supported.\n- **Safe by default**: an SSRF guard refuses private, loopback and cloud metadata addresses at dial time, so neither DNS rebinding nor a redirect gets around it, and oversized bodies are rejected before parsing.",
+        "id": "websearch-tool memberi LLM dua tool, **pencarian web** dan **pembacaan halaman**, dalam bentuk dua package Go yang kecil. Semuanya berjalan lewat HTTP biasa: tanpa headless browser dan tanpa server pencarian yang perlu di-host. Contoh referensinya menghubungkan keduanya ke loop tool-calling yang kompatibel dengan OpenAI lewat OpenRouter.\n\n- **Rantai mesin pencari**: Brave (dengan API key opsional), Bing, DuckDuckGo, Bing News, dan Wikipedia ditanya bergantian, dan jawaban pertama yang benar-benar membahas kueri yang dipakai.\n- **Dirancang untuk scraper yang gagal diam-diam**: halaman \"tidak ada hasil\" dihitung sebagai gagal, halaman hasil palsu dikenali dengan mencocokkan setiap jawaban dengan kata-kata kueri, dan mesin yang membalas dengan CAPTCHA atau rate limit diistirahatkan dulu.\n- **Pengaturan jeda dan cache**: setiap mesin punya jeda request sendiri, mesin yang lambat tidak menahan yang lain, dan jawaban di-cache selama 10 menit.\n- **Pembacaan halaman**: mengubah halaman menjadi teks terstruktur berisi heading, item list, dan baris tabel, menaruh data JSON-LD seperti harga dan jam buka di depan, dan dengan pertanyaan fokus hanya mengembalikan bagian yang menjawabnya. PDF juga didukung.\n- **Aman sejak awal**: pelindung SSRF menolak alamat privat, loopback, dan metadata cloud saat koneksi dibuat, sehingga DNS rebinding maupun redirect tidak bisa mengakalinya, dan body yang terlalu besar ditolak sebelum diproses."
+      },
+      "screenshots": []
+    },
     {
       "id": "peler",
       "name": "Peler",

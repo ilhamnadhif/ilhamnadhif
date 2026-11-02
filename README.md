@@ -1,9 +1,15 @@
-# Hai
+# Muhammad Ilham Nadhif
 
-I'm Muhammad Ilham Nadhif, a backend developer from Indonesia working with Go, payment integrations and Direct Carrier Billing.
+Backend developer from Indonesia, working mostly in Go. At Lumoshive I build backend services for a game portal and integrate Direct Carrier Billing payment flows with telecom providers in several countries.
 
 - Portfolio: http://43.133.46.121:3003
 - LinkedIn: https://www.linkedin.com/in/muhammad-ilham-nadhif-a5b9b6203/
-- Side projects, all written in Rust: [Peler](https://github.com/ilhamnadhif/peler) (SSH & SFTP client), [Merpati](https://github.com/ilhamnadhif/merpati) (API client) and [DBiji](https://github.com/ilhamnadhif/dbiji) (database client)
+
+## Open source
+
+- [websearch-tool](https://github.com/ilhamnadhif/websearch-tool) (Go): web search and page reading as LLM tools, over plain HTTP, with fallback across search engines and an SSRF guard
+- [Peler](https://github.com/ilhamnadhif/peler) (Rust): native SSH and SFTP client
+- [Merpati](https://github.com/ilhamnadhif/merpati) (Rust): native API client, a Postman alternative
+- [DBiji](https://github.com/ilhamnadhif/dbiji) (Rust): native SQL database client, a DBeaver alternative
 
 This repository is also the source of the portfolio site: Next.js, content in a JSON file, deployed with Docker. Development and deployment notes are in [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md).

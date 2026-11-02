@@ -483,6 +483,11 @@ p strong {
   margin-top: var(--space-48);
 }
 
+/* Without a cover screenshot the hero's own bottom padding is gap enough. */
+.project-page .hero + .project-body {
+  margin-top: 0;
+}
+
 .shot {
   margin-bottom: var(--space-24);
 }
