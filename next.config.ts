@@ -1,4 +1,5 @@
 import type { NextConfig } from "next";
+import { MAX_UPLOAD_BYTES } from "./lib/upload-limit";
 
 const nextConfig: NextConfig = {
   cacheComponents: true,
@@ -7,8 +8,8 @@ const nextConfig: NextConfig = {
   poweredByHeader: false,
   experimental: {
     serverActions: {
-      // Uploads are capped at 5MB in the action itself; leave room for multipart overhead.
-      bodySizeLimit: "6mb",
+      // The upload action enforces the real cap; 1MB more leaves room for multipart overhead.
+      bodySizeLimit: MAX_UPLOAD_BYTES + 1024 * 1024,
     },
   },
 };

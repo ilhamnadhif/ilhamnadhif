@@ -5,6 +5,7 @@ import { ChevronDown, ChevronUp, FileText, Plus, Trash2, Upload, X } from "lucid
 import { useId, useRef, useState, useTransition, type ReactNode } from "react";
 import { uploadAction } from "@/app/admin/actions";
 import type { Localized } from "@/lib/i18n";
+import { MAX_UPLOAD_BYTES, MAX_UPLOAD_MB } from "@/lib/upload-limit";
 
 export function Field({ label, hint, children }: { label: string; hint?: string; children: ReactNode }) {
   return (
@@ -203,6 +204,8 @@ type UploadProps = {
   /** image: png/jpg/webp/svg · pdf: pdf only · certificate: pdf or png/jpg/webp */
   kind: "image" | "pdf" | "certificate";
   hint?: string;
+  /** Photos larger than this many pixels on the longer side are scaled down in the browser before upload. */
+  shrinkTo?: number;
 };
 
 const accepts: Record<UploadProps["kind"], string> = {
@@ -211,17 +214,51 @@ const accepts: Record<UploadProps["kind"], string> = {
   certificate: "application/pdf,image/png,image/jpeg,image/webp",
 };
 
-export function FileUpload({ label, value, onChange, kind, hint }: UploadProps) {
+/**
+ * Re-encodes a photo as a JPEG no larger than `max` pixels on its longer side.
+ * Phone photos are often several megabytes; the site shows them at 96px. Re-encoding
+ * also drops EXIF data such as GPS location. Returns the original file when the
+ * browser cannot decode or encode it, so the upload still goes through.
+ */
+async function shrinkPhoto(file: File, max: number): Promise<File> {
+  if (!["image/jpeg", "image/png", "image/webp"].includes(file.type)) return file;
+  try {
+    const bitmap = await createImageBitmap(file, { imageOrientation: "from-image" });
+    const scale = Math.min(1, max / Math.max(bitmap.width, bitmap.height));
+    const canvas = document.createElement("canvas");
+    canvas.width = Math.round(bitmap.width * scale);
+    canvas.height = Math.round(bitmap.height * scale);
+    const context = canvas.getContext("2d");
+    if (!context) return file;
+    context.fillStyle = "#fff"; // JPEG has no transparency
+    context.fillRect(0, 0, canvas.width, canvas.height);
+    context.drawImage(bitmap, 0, 0, canvas.width, canvas.height);
+    bitmap.close();
+    const blob = await new Promise<Blob | null>((resolve) => canvas.toBlob(resolve, "image/jpeg", 0.86));
+    if (!blob || blob.size >= file.size) return file;
+    return new File([blob], `${file.name.replace(/\.[^.]+$/, "")}.jpg`, { type: "image/jpeg" });
+  } catch {
+    return file;
+  }
+}
+
+export function FileUpload({ label, value, onChange, kind, hint, shrinkTo }: UploadProps) {
   const input = useRef<HTMLInputElement>(null);
   const [pending, startTransition] = useTransition();
   const [error, setError] = useState<string | null>(null);
 
-  const upload = (file: File) => {
+  const upload = (picked: File) => {
     setError(null);
-    const data = new FormData();
-    data.set("file", file);
-    data.set("kind", kind);
+    if (picked.size > MAX_UPLOAD_BYTES) {
+      setError(`Ukuran file maksimal ${MAX_UPLOAD_MB}MB.`);
+      if (input.current) input.current.value = "";
+      return;
+    }
     startTransition(async () => {
+      const file = shrinkTo ? await shrinkPhoto(picked, shrinkTo) : picked;
+      const data = new FormData();
+      data.set("file", file);
+      data.set("kind", kind);
       const result = await uploadAction(data);
       if (result.ok) onChange(result.path);
       else setError(result.error);

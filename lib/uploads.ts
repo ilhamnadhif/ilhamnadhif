@@ -4,8 +4,7 @@ import { randomUUID } from "node:crypto";
 import fs from "node:fs/promises";
 import path from "node:path";
 import { UPLOADS_DIR } from "./content/store";
-
-export const MAX_UPLOAD_BYTES = 5 * 1024 * 1024;
+import { MAX_UPLOAD_BYTES, MAX_UPLOAD_MB } from "./upload-limit";
 
 export const uploadTypes = {
   png: "image/png",
@@ -44,7 +43,7 @@ export type UploadResult = { ok: true; path: string } | { ok: false; error: stri
 
 export async function storeUpload(file: File, allowed: readonly Extension[]): Promise<UploadResult> {
   if (file.size === 0) return { ok: false, error: "File kosong." };
-  if (file.size > MAX_UPLOAD_BYTES) return { ok: false, error: "Ukuran file maksimal 5MB." };
+  if (file.size > MAX_UPLOAD_BYTES) return { ok: false, error: `Ukuran file maksimal ${MAX_UPLOAD_MB}MB.` };
 
   const ext = file.name.split(".").pop()?.toLowerCase() as Extension | undefined;
   if (!ext || !allowed.includes(ext)) {

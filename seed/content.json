@@ -30,8 +30,8 @@
         "id": "Latar Belakang"
       },
       "body": {
-        "en": "I started out building REST APIs and web applications with Node.js, PostgreSQL, and MongoDB, first as an intern and then through the Binar Academy Full-Stack Developer Bootcamp. Soon after, I moved to Go, working on an internal system at Digital Waqf Ventures (WAVE) with Redis, microservices, and Clean Architecture.\n\nSince 2022 I have been at Lumoshive, building backend services and features for a game portal. Alongside work, I am pursuing a Bachelor of Computer Science in Informatics Engineering at Universitas Indraprasta PGRI.",
-        "id": "Saya memulai dengan membangun REST API dan aplikasi web menggunakan Node.js, PostgreSQL, dan MongoDB, pertama sebagai siswa magang, lalu lewat Bootcamp Full-Stack Developer di Binar Academy. Tidak lama kemudian saya pindah ke Go dan ikut mengembangkan sistem internal di Digital Waqf Ventures (WAVE) dengan Redis, microservices, dan Clean Architecture.\n\nSejak 2022 saya bekerja di Lumoshive, membangun layanan backend dan fitur untuk sebuah portal game. Sambil bekerja, saya menempuh S1 Teknik Informatika di Universitas Indraprasta PGRI."
+        "en": "I started out building REST APIs and web applications with Node.js, PostgreSQL, and MongoDB, first as an intern and then through the Binar Academy Full-Stack Developer Bootcamp. Soon after, I moved to Go, working on an internal system at Digital Waqf Ventures (WAVE) with Redis, microservices, and Clean Architecture.\n\nSince 2022 I have been at Lumoshive, placed at PT LinkIT 360, building backend services and features for a game portal. Alongside work, I am pursuing a Bachelor of Computer Science in Informatics Engineering at Universitas Indraprasta PGRI.",
+        "id": "Saya memulai dengan membangun REST API dan aplikasi web menggunakan Node.js, PostgreSQL, dan MongoDB, pertama sebagai siswa magang, lalu lewat Bootcamp Full-Stack Developer di Binar Academy. Tidak lama kemudian saya pindah ke Go dan ikut mengembangkan sistem internal di Digital Waqf Ventures (WAVE) dengan Redis, microservices, dan Clean Architecture.\n\nSejak 2022 saya bekerja di Lumoshive dengan penempatan di PT LinkIT 360, membangun layanan backend dan fitur untuk sebuah portal game. Sambil bekerja, saya menempuh S1 Teknik Informatika di Universitas Indraprasta PGRI."
       },
       "tags": {
         "en": "",
@@ -66,14 +66,14 @@
       "start": "2022-08",
       "end": "",
       "location": {
-        "en": "West Jakarta, Indonesia",
-        "id": "Jakarta Barat, Indonesia"
+        "en": "Placed at PT LinkIT 360, Jakarta",
+        "id": "Penempatan di PT LinkIT 360, Jakarta"
       },
       "description": {
         "en": "- Integrate Direct Carrier Billing (DCB) payment flows that connect game products with telecom providers across multiple countries.\n- Build backend services and product features for a game portal in Go.\n- Use Pub/Sub to support backend workflows and service integrations.\n- Turn business requirements into maintainable APIs and dependable backend integrations.",
         "id": "- Mengintegrasikan alur pembayaran Direct Carrier Billing (DCB) yang menghubungkan produk game dengan operator telekomunikasi di berbagai negara.\n- Membangun layanan backend dan fitur portal game dengan Go.\n- Memakai Pub/Sub untuk alur kerja backend dan integrasi antar layanan.\n- Menerjemahkan kebutuhan bisnis menjadi API yang mudah dirawat dan integrasi backend yang andal."
       },
-      "logo": "",
+      "logo": "/uploads/logo-lumoshive.webp",
       "url": ""
     },
     {
@@ -113,7 +113,7 @@
         "en": "Built a RESTful API for an e-learning platform with Node.js and PostgreSQL, and collaborated on a game portal project with Node.js and MongoDB.",
         "id": "Membuat RESTful API untuk platform e-learning dengan Node.js dan PostgreSQL, serta berkolaborasi dalam project portal game dengan Node.js dan MongoDB."
       },
-      "logo": "",
+      "logo": "/uploads/logo-smkrus.webp",
       "url": ""
     }
   ],
@@ -146,8 +146,8 @@
       "screenshots": []
     },
     {
-      "id": "peler",
-      "name": "Peler",
+      "id": "ternaryshell",
+      "name": "TernaryShell",
       "tagline": {
         "en": "Lightweight SSH & SFTP client",
         "id": "Klien SSH & SFTP yang ringan"
@@ -158,22 +158,22 @@
       },
       "tags": "Rust, egui, SSH, SFTP, Cross-platform",
       "icon": "terminal",
-      "logo": "",
-      "repo": "https://github.com/ilhamnadhif/peler",
-      "homepage": "https://github.com/ilhamnadhif/peler/releases/latest",
+      "logo": "/uploads/ternaryshell-icon.webp",
+      "repo": "https://github.com/ilhamnadhif/ternaryshell",
+      "homepage": "https://github.com/ilhamnadhif/ternaryshell/releases/latest",
       "homepageLabel": {
         "en": "Download",
         "id": "Unduh"
       },
-      "slug": "peler",
+      "slug": "ternaryshell",
       "details": {
-        "en": "Peler is a native replacement for Electron-based SSH clients such as Electerm: one small binary, no Chromium, no Node.js. It starts in about 0.1 s, idles at 0% CPU and uses around 70 MB of memory with a session open.\n\n- **Saved connections** in nested groups, with fuzzy search and quick connect. Passwords stay in the system keychain, not in Peler's files.\n- **A real terminal** with 24-bit colour and mouse support for vim, htop and tmux, plus tabs and split panes that share one SSH connection.\n- **Dual-pane SFTP** that transfers many files in the background, with progress, speed and time left.\n- **Remote file editor**: change a config on the server and save it in place.\n- **Notices dead connections** after the network changes and offers to reconnect instead of hanging.\n- **Import** from Electerm and ~/.ssh/config, and automatic updates from GitHub releases.\n- Runs on macOS, Windows and Linux, in English and Indonesian, with light and dark themes.",
-        "id": "Peler adalah pengganti native untuk klien SSH berbasis Electron seperti Electerm: satu binary kecil, tanpa Chromium, tanpa Node.js. Terbuka dalam sekitar 0,1 detik, CPU 0% saat diam, dan memakai sekitar 70 MB memori dengan satu sesi terbuka.\n\n- **Koneksi tersimpan** dalam grup bertingkat, dengan pencarian fuzzy dan quick connect. Password disimpan di keychain sistem, bukan di file Peler.\n- **Terminal sungguhan** dengan warna 24-bit dan dukungan mouse untuk vim, htop, dan tmux, serta tab dan split pane yang berbagi satu koneksi SSH.\n- **SFTP dua panel** yang mentransfer banyak file di background, lengkap dengan progres, kecepatan, dan sisa waktu.\n- **Editor file remote**: ubah config di server lalu simpan langsung di tempat.\n- **Mendeteksi koneksi mati** setelah jaringan berubah dan menawarkan reconnect, bukan menggantung.\n- **Impor** dari Electerm dan ~/.ssh/config, serta update otomatis dari GitHub releases.\n- Berjalan di macOS, Windows, dan Linux, dalam Bahasa Inggris dan Indonesia, dengan tema terang dan gelap."
+        "en": "TernaryShell is a native replacement for Electron-based SSH clients such as Electerm: one small binary, no Chromium, no Node.js. It starts in about 0.1 s, idles at 0% CPU and uses around 70 MB of memory with a session open.\n\n- **Saved connections** in nested groups, with fuzzy search and quick connect. Passwords stay in the system keychain, not in TernaryShell's files.\n- **A real terminal** built on alacritty_terminal, with 24-bit colour and mouse support for vim, htop and tmux, plus tabs and split panes that share one SSH connection.\n- **Dual-pane SFTP** that transfers many files in the background, with progress, speed and time left. Folders transfer recursively and permissions are kept.\n- **Remote file editor**: change a config on the server and save it in place.\n- **Notices dead connections** after the network changes and offers to reconnect instead of hanging.\n- **Careful with your servers**: strict host-key checking, and transfers that never leave half-written files behind.\n- **Import** from Electerm and ~/.ssh/config, and one-click updates from GitHub releases.\n- Runs on macOS, Windows and Linux, in English and Indonesian, with light and dark themes.",
+        "id": "TernaryShell adalah pengganti native untuk klien SSH berbasis Electron seperti Electerm: satu binary kecil, tanpa Chromium, tanpa Node.js. Terbuka dalam sekitar 0,1 detik, CPU 0% saat diam, dan memakai sekitar 70 MB memori dengan satu sesi terbuka.\n\n- **Koneksi tersimpan** dalam grup bertingkat, dengan pencarian fuzzy dan quick connect. Password disimpan di keychain sistem, bukan di file TernaryShell.\n- **Terminal sungguhan** berbasis alacritty_terminal, dengan warna 24-bit dan dukungan mouse untuk vim, htop, dan tmux, serta tab dan split pane yang berbagi satu koneksi SSH.\n- **SFTP dua panel** yang mentransfer banyak file di latar belakang, lengkap dengan progres, kecepatan, dan sisa waktu. Folder ditransfer rekursif dan permission tetap terjaga.\n- **Editor file remote**: ubah config di server lalu simpan langsung di tempat.\n- **Mendeteksi koneksi mati** setelah jaringan berubah dan menawarkan reconnect, bukan menggantung.\n- **Hati-hati dengan server Anda**: pemeriksaan host key yang ketat, dan transfer yang tidak pernah meninggalkan file setengah jadi.\n- **Impor** dari Electerm dan ~/.ssh/config, serta update sekali klik dari rilis GitHub.\n- Berjalan di macOS, Windows, dan Linux, dalam bahasa Inggris dan Indonesia, dengan tema terang dan gelap."
       },
       "screenshots": [
         {
           "id": "terminal",
-          "file": "/uploads/peler-terminal.webp",
+          "file": "/uploads/ternaryshell-terminal.webp",
           "caption": {
             "en": "Saved connections, tabs and split panes over one SSH connection",
             "id": "Koneksi tersimpan, tab, dan split pane di atas satu koneksi SSH"
@@ -181,7 +181,7 @@
         },
         {
           "id": "sftp",
-          "file": "/uploads/peler-sftp.webp",
+          "file": "/uploads/ternaryshell-sftp.webp",
           "caption": {
             "en": "Dual-pane SFTP with the transfers popup",
             "id": "SFTP dua panel dengan popup transfer"
@@ -189,7 +189,7 @@
         },
         {
           "id": "editor",
-          "file": "/uploads/peler-editor.webp",
+          "file": "/uploads/ternaryshell-editor.webp",
           "caption": {
             "en": "Editing a YAML config on the server",
             "id": "Mengedit config YAML di server"
@@ -198,42 +198,42 @@
       ]
     },
     {
-      "id": "merpati",
-      "name": "Merpati",
+      "id": "ternarywire",
+      "name": "TernaryWire",
       "tagline": {
         "en": "Native API client, a Postman alternative",
-        "id": "API client native, alternatif Postman"
+        "id": "Klien API native, alternatif Postman"
       },
       "description": {
         "en": "A lightweight API client written entirely in Rust. It handles HTTP, GraphQL, gRPC, WebSocket, Socket.IO, MQTT, MCP and AI requests, with Postman-compatible collections and scripts and a newman-compatible CLI.",
-        "id": "API client ringan yang seluruhnya ditulis dengan Rust. Mendukung request HTTP, GraphQL, gRPC, WebSocket, Socket.IO, MQTT, MCP, dan AI, dengan koleksi dan script yang kompatibel dengan Postman serta CLI yang kompatibel dengan newman."
+        "id": "Klien API ringan yang seluruhnya ditulis dengan Rust. Mendukung request HTTP, GraphQL, gRPC, WebSocket, Socket.IO, MQTT, MCP, dan AI, dengan koleksi dan skrip yang kompatibel dengan Postman serta CLI yang kompatibel dengan newman."
       },
       "tags": "Rust, egui, HTTP, GraphQL, gRPC, WebSocket, MQTT, CLI",
       "icon": "send",
-      "logo": "",
-      "repo": "https://github.com/ilhamnadhif/merpati",
-      "homepage": "https://github.com/ilhamnadhif/merpati/releases/latest",
+      "logo": "/uploads/ternarywire-icon.webp",
+      "repo": "https://github.com/ilhamnadhif/ternarywire",
+      "homepage": "https://github.com/ilhamnadhif/ternarywire/releases/latest",
       "homepageLabel": {
         "en": "Download",
         "id": "Unduh"
       },
-      "slug": "merpati",
+      "slug": "ternarywire",
       "details": {
-        "en": "Merpati is a native alternative to Postman: one small binary, no Electron, no Node.js, no account. It draws its first frame in about 40 ms and uses under 90 MB of memory. Collections are plain JSON files in a folder you can commit to Git.\n\n- **HTTP, GraphQL, gRPC, WebSocket, Socket.IO, MQTT, SOAP, MCP and AI requests** in one app, each with its own tab, message log and scripts.\n- **Postman compatible**: collections, environments and pm.* scripts import and run unchanged for common use.\n- **Collection Runner and CLI** with data files, JUnit/HTML/JSON reports and newman-compatible options, so it can replace newman in CI. Performance tests with virtual users.\n- **Flows**: a visual canvas that chains requests, conditions, loops, parallel branches, scripts and AI calls.\n- **Spec Hub** for OpenAPI, AsyncAPI, Protobuf, GraphQL and Smithy files, with live validation and a live docs preview.\n- A local **mock server, webhook listener and capture proxy**, and twelve auth types from Basic and OAuth 2.0 to AWS SigV4.\n- Runs on macOS, Windows and Linux, in English and Indonesian, with light and dark themes.",
-        "id": "Merpati adalah alternatif native untuk Postman: satu binary kecil, tanpa Electron, tanpa Node.js, tanpa akun. Frame pertamanya tampil dalam sekitar 40 ms dan memakai kurang dari 90 MB memori. Koleksi berupa file JSON biasa di folder yang bisa di-commit ke Git.\n\n- **Request HTTP, GraphQL, gRPC, WebSocket, Socket.IO, MQTT, SOAP, MCP, dan AI** dalam satu aplikasi, masing-masing dengan tab, log pesan, dan script sendiri.\n- **Kompatibel dengan Postman**: koleksi, environment, dan script pm.* bisa diimpor dan dijalankan tanpa diubah untuk penggunaan umum.\n- **Collection Runner dan CLI** dengan file data, laporan JUnit/HTML/JSON, dan opsi yang kompatibel dengan newman, sehingga bisa menggantikan newman di CI. Juga ada tes performa dengan virtual user.\n- **Flows**: kanvas visual untuk merangkai request, kondisi, loop, cabang paralel, script, dan panggilan AI.\n- **Spec Hub** untuk file OpenAPI, AsyncAPI, Protobuf, GraphQL, dan Smithy, dengan validasi dan preview dokumentasi secara langsung.\n- **Mock server, penerima webhook, dan capture proxy** lokal, serta dua belas tipe autentikasi dari Basic dan OAuth 2.0 sampai AWS SigV4.\n- Berjalan di macOS, Windows, dan Linux, dalam Bahasa Inggris dan Indonesia, dengan tema terang dan gelap."
+        "en": "TernaryWire is a native alternative to Postman: one small binary, no Electron, no Node.js, no account. It draws its first frame in about 40 ms, uses under 90 MB of memory and streams a 100 MB response to disk instead of into memory. Collections are plain JSON files in a folder you can commit to Git.\n\n- **HTTP, GraphQL, gRPC, WebSocket, Socket.IO, MQTT, SOAP, MCP and AI requests** in one app, each with its own tab, message log and scripts.\n- **Postman compatible**: collections, environments and pm.* scripts import and run unchanged for common use; a corpus of 50 realistic Postman scripts passes 50 out of 50.\n- **Collection Runner and CLI** with data files, JUnit/HTML/JSON reports and newman-compatible options, so it can replace newman in CI. Performance tests with virtual users.\n- **Flows**: a visual canvas that chains requests, conditions, loops, parallel branches, scripts and AI calls.\n- **Spec Hub** for OpenAPI, AsyncAPI, Protobuf, GraphQL and Smithy files, with live validation and a live docs preview.\n- A local **mock server, webhook listener and capture proxy**, and twelve auth types from Basic and OAuth 2.0 to AWS SigV4.\n- Runs on macOS, Windows and Linux, in English and Indonesian, with light and dark themes.",
+        "id": "TernaryWire adalah alternatif native untuk Postman: satu binary kecil, tanpa Electron, tanpa Node.js, tanpa akun. Frame pertamanya tampil dalam sekitar 40 ms, memakai kurang dari 90 MB memori, dan respons 100 MB dialirkan ke disk, bukan ke memori. Koleksi berupa file JSON biasa di folder yang bisa di-commit ke Git.\n\n- **Request HTTP, GraphQL, gRPC, WebSocket, Socket.IO, MQTT, SOAP, MCP, dan AI** dalam satu aplikasi, masing-masing dengan tab, log pesan, dan skrip sendiri.\n- **Kompatibel dengan Postman**: koleksi, environment, dan skrip pm.* bisa diimpor dan dijalankan tanpa diubah untuk pemakaian umum; korpus 50 skrip Postman realistis lulus 50 dari 50.\n- **Collection Runner dan CLI** dengan file data, laporan JUnit/HTML/JSON, dan opsi yang kompatibel dengan newman, sehingga bisa menggantikan newman di CI. Juga ada tes performa dengan virtual user.\n- **Flows**: kanvas visual untuk merangkai request, kondisi, loop, cabang paralel, skrip, dan panggilan AI.\n- **Spec Hub** untuk file OpenAPI, AsyncAPI, Protobuf, GraphQL, dan Smithy, dengan validasi dan pratinjau dokumentasi secara langsung.\n- **Mock server, listener webhook, dan capture proxy** lokal, serta dua belas jenis autentikasi dari Basic dan OAuth 2.0 sampai AWS SigV4.\n- Berjalan di macOS, Windows, dan Linux, dalam bahasa Inggris dan Indonesia, dengan tema terang dan gelap."
       },
       "screenshots": [
         {
           "id": "hero",
-          "file": "/uploads/merpati-hero.webp",
+          "file": "/uploads/ternarywire-hero.webp",
           "caption": {
             "en": "A collection, a request and its response with test results",
-            "id": "Koleksi, request, dan response beserta hasil tes"
+            "id": "Koleksi, request, dan respons beserta hasil tes"
           }
         },
         {
           "id": "runner",
-          "file": "/uploads/merpati-runner.webp",
+          "file": "/uploads/ternarywire-runner.webp",
           "caption": {
             "en": "Collection Runner: 10 requests, 20 tests passed",
             "id": "Collection Runner: 10 request, 20 tes lolos"
@@ -241,7 +241,7 @@
         },
         {
           "id": "flows",
-          "file": "/uploads/merpati-flows.webp",
+          "file": "/uploads/ternarywire-flows.webp",
           "caption": {
             "en": "A flow with three requests in parallel, a join and an AI summary",
             "id": "Flow dengan tiga request paralel, join, dan ringkasan AI"
@@ -249,7 +249,7 @@
         },
         {
           "id": "spec-hub",
-          "file": "/uploads/merpati-spec-hub.webp",
+          "file": "/uploads/ternarywire-spec-hub.webp",
           "caption": {
             "en": "Spec Hub: an OpenAPI file next to its live documentation",
             "id": "Spec Hub: file OpenAPI di samping dokumentasinya"
@@ -257,7 +257,7 @@
         },
         {
           "id": "socketio",
-          "file": "/uploads/merpati-socketio.webp",
+          "file": "/uploads/ternarywire-socketio.webp",
           "caption": {
             "en": "A Socket.IO session with ticks and an echoed message",
             "id": "Sesi Socket.IO dengan tick dan pesan yang dipantulkan"
@@ -265,7 +265,7 @@
         },
         {
           "id": "dark",
-          "file": "/uploads/merpati-dark.webp",
+          "file": "/uploads/ternarywire-dark.webp",
           "caption": {
             "en": "Dark theme",
             "id": "Tema gelap"
@@ -274,34 +274,34 @@
       ]
     },
     {
-      "id": "dbiji",
-      "name": "DBiji",
+      "id": "ternarygrid",
+      "name": "TernaryGrid",
       "tagline": {
         "en": "SQL database client, a DBeaver alternative",
         "id": "Klien database SQL, alternatif DBeaver"
       },
       "description": {
-        "en": "A lightweight database client for macOS, Windows and Linux, written entirely in Rust. It connects to PostgreSQL, MySQL, SQLite, SQL Server, ClickHouse, Redis, MongoDB and more.",
-        "id": "Klien database ringan untuk macOS, Windows, dan Linux, yang seluruhnya ditulis dengan Rust. Bisa terhubung ke PostgreSQL, MySQL, SQLite, SQL Server, ClickHouse, Redis, MongoDB, dan lainnya."
+        "en": "A lightweight database client for macOS, Windows and Linux, written entirely in Rust. It connects to PostgreSQL, MySQL, SQLite, SQL Server, Oracle, ClickHouse, Redis, MongoDB and more.",
+        "id": "Klien database ringan untuk macOS, Windows, dan Linux, yang seluruhnya ditulis dengan Rust. Bisa terhubung ke PostgreSQL, MySQL, SQLite, SQL Server, Oracle, ClickHouse, Redis, MongoDB, dan lainnya."
       },
       "tags": "Rust, egui, PostgreSQL, MySQL, SQLite, ClickHouse, Redis, MongoDB",
       "icon": "database",
-      "logo": "",
-      "repo": "https://github.com/ilhamnadhif/dbiji",
-      "homepage": "https://github.com/ilhamnadhif/dbiji/releases/latest",
+      "logo": "/uploads/ternarygrid-icon.webp",
+      "repo": "https://github.com/ilhamnadhif/ternarygrid",
+      "homepage": "https://github.com/ilhamnadhif/ternarygrid/releases/latest",
       "homepageLabel": {
         "en": "Download",
         "id": "Unduh"
       },
-      "slug": "dbiji",
+      "slug": "ternarygrid",
       "details": {
-        "en": "DBiji is a native alternative to DBeaver: one small binary, no JVM, no Electron. It opens in about 0.1 s, idles at 0% CPU and uses around 90 MB of memory, and result sets of millions of rows never have to fit in memory.\n\n- **Many databases, one interface**: PostgreSQL, MySQL, MariaDB, SQLite, SQL Server, Oracle, CockroachDB, ClickHouse, Cassandra, Redis, MongoDB and Elasticsearch, all with drivers written in Rust.\n- **SQL editor** with schema-aware autocomplete, parameters, a formatter, explain plans and a searchable query history.\n- **Data grid** that scrolls a million rows smoothly, with inline editing saved in one transaction and foreign key navigation.\n- **Safe by default**: production connection types, confirmations for DELETE or UPDATE without WHERE, and read-only connections.\n- **Connections** through SSH tunnels, proxies and SSL, with passwords in the system keychain.\n- ER diagrams, import and export, schema and data compare, and an optional AI assistant that knows the schema.\n- Runs on macOS, Windows and Linux, in English and Indonesian, with light and dark themes.",
-        "id": "DBiji adalah alternatif native untuk DBeaver: satu binary kecil, tanpa JVM, tanpa Electron. Terbuka dalam sekitar 0,1 detik, CPU 0% saat diam, memakai sekitar 90 MB memori, dan hasil query jutaan baris tidak perlu dimuat seluruhnya ke memori.\n\n- **Banyak database, satu antarmuka**: PostgreSQL, MySQL, MariaDB, SQLite, SQL Server, Oracle, CockroachDB, ClickHouse, Cassandra, Redis, MongoDB, dan Elasticsearch, semuanya dengan driver yang ditulis dengan Rust.\n- **Editor SQL** dengan autocomplete yang memahami skema, parameter, formatter, explain plan, dan riwayat query yang bisa dicari.\n- **Grid data** yang tetap lancar menggulir sejuta baris, dengan edit langsung yang disimpan dalam satu transaksi dan navigasi foreign key.\n- **Aman secara default**: tipe koneksi production, konfirmasi untuk DELETE atau UPDATE tanpa WHERE, dan koneksi read-only.\n- **Koneksi** lewat SSH tunnel, proxy, dan SSL, dengan password di keychain sistem.\n- Diagram ER, impor dan ekspor, perbandingan skema dan data, serta asisten AI opsional yang memahami skema.\n- Berjalan di macOS, Windows, dan Linux, dalam Bahasa Inggris dan Indonesia, dengan tema terang dan gelap."
+        "en": "TernaryGrid is a native alternative to DBeaver: one small binary, no JVM, no Electron. It opens in about 0.1 s, idles at 0% CPU and uses around 90 MB of memory, and result sets of millions of rows never have to fit in memory.\n\n- **Many databases, one interface**: PostgreSQL, MySQL, MariaDB, SQLite, SQL Server, Oracle, CockroachDB, ClickHouse, Cassandra, Redis, MongoDB and Elasticsearch, all with drivers written in Rust, plus ready-made entries for compatible products such as Supabase, Neon and TiDB.\n- **SQL editor** with schema-aware autocomplete, parameters, a formatter, explain plans and a searchable query history.\n- **Data grid** that scrolls a million rows at under 1 ms per frame, with inline editing saved in one transaction and foreign key navigation.\n- **Safe by default**: production connection types, confirmations for DELETE or UPDATE without WHERE, and read-only connections.\n- **Connections** through SSH tunnels, proxies and SSL, with passwords in the system keychain or an encrypted vault.\n- ER diagrams, import and export, migration between databases, schema and data compare, and an optional AI assistant that knows the schema.\n- Runs on macOS, Windows and Linux, with light and dark themes.",
+        "id": "TernaryGrid adalah alternatif native untuk DBeaver: satu binary kecil, tanpa JVM, tanpa Electron. Terbuka dalam sekitar 0,1 detik, CPU 0% saat diam, memakai sekitar 90 MB memori, dan hasil query jutaan baris tidak perlu dimuat seluruhnya ke memori.\n\n- **Banyak database, satu antarmuka**: PostgreSQL, MySQL, MariaDB, SQLite, SQL Server, Oracle, CockroachDB, ClickHouse, Cassandra, Redis, MongoDB, dan Elasticsearch, semuanya dengan driver yang ditulis dengan Rust, ditambah entri siap pakai untuk produk yang kompatibel seperti Supabase, Neon, dan TiDB.\n- **Editor SQL** dengan autocomplete yang memahami skema, parameter, formatter, execution plan, dan riwayat query yang bisa dicari.\n- **Grid data** yang menggulir sejuta baris di bawah 1 ms per frame, dengan edit langsung yang disimpan dalam satu transaksi dan navigasi foreign key.\n- **Aman secara bawaan**: tipe koneksi production, konfirmasi untuk DELETE atau UPDATE tanpa WHERE, dan koneksi read-only.\n- **Koneksi** lewat SSH tunnel, proxy, dan SSL, dengan password di keychain sistem atau brankas terenkripsi.\n- Diagram ER, impor dan ekspor, migrasi antar database, perbandingan skema dan data, serta asisten AI opsional yang memahami skema.\n- Berjalan di macOS, Windows, dan Linux, dengan tema terang dan gelap."
       },
       "screenshots": [
         {
           "id": "editor",
-          "file": "/uploads/dbiji-editor.webp",
+          "file": "/uploads/ternarygrid-editor.webp",
           "caption": {
             "en": "Navigator, SQL editor and result grid",
             "id": "Navigator, editor SQL, dan grid hasil"
@@ -309,7 +309,7 @@
         },
         {
           "id": "data",
-          "file": "/uploads/dbiji-data.webp",
+          "file": "/uploads/ternarygrid-data.webp",
           "caption": {
             "en": "A table's data with a server-side filter and ORDER BY",
             "id": "Data tabel dengan filter dan ORDER BY di server"
@@ -317,7 +317,7 @@
         },
         {
           "id": "er-diagram",
-          "file": "/uploads/dbiji-er-diagram.webp",
+          "file": "/uploads/ternarygrid-er-diagram.webp",
           "caption": {
             "en": "ER diagram of the sample database",
             "id": "Diagram ER dari database contoh"
@@ -336,7 +336,7 @@
       },
       "start": "2023",
       "end": "",
-      "logo": ""
+      "logo": "/uploads/logo-unindra.webp"
     },
     {
       "id": "smk",
@@ -347,7 +347,7 @@
       },
       "start": "2019",
       "end": "2022",
-      "logo": ""
+      "logo": "/uploads/logo-smkrus.webp"
     }
   ],
   "certifications": [
@@ -383,7 +383,7 @@
         }
       ],
       "url": "",
-      "logo": ""
+      "logo": "/uploads/logo-binar.webp"
     }
   ],
   "seo": {

@@ -1,6 +1,6 @@
 # Muhammad Ilham Nadhif
 
-Backend developer from Indonesia, working mostly in Go. At Lumoshive I build backend services for a game portal and integrate Direct Carrier Billing payment flows with telecom providers in several countries.
+Backend developer from Indonesia, working mostly in Go. At Lumoshive, placed at PT LinkIT 360, I build backend services for a game portal and integrate Direct Carrier Billing payment flows with telecom providers in several countries.
 
 - Portfolio: http://43.133.46.121:3003
 - LinkedIn: https://www.linkedin.com/in/muhammad-ilham-nadhif-a5b9b6203/

@@ -4,6 +4,7 @@ import { Check, ExternalLink, LogOut, RotateCcw, Save } from "lucide-react";
 import { useEffect, useEffectEvent, useState, useTransition } from "react";
 import { logout, restoreAction, saveContentAction, type SaveState } from "@/app/admin/actions";
 import { iconNames, type Content } from "@/lib/content/schema";
+import { MAX_UPLOAD_MB } from "@/lib/upload-limit";
 import {
   emptyLocalized,
   Field,
@@ -155,8 +156,9 @@ export function Editor({ initialContent, initialBackups }: { initialContent: Con
             <FileUpload
               label="Foto profil"
               kind="image"
+              shrinkTo={800}
               value={profile.avatar}
-              hint="Persegi, minimal 192×192 px. PNG, JPG, WebP atau SVG, maksimal 5MB."
+              hint={`Foto persegi paling bagus. PNG, JPG atau WebP, maksimal ${MAX_UPLOAD_MB}MB; foto besar otomatis dikecilkan.`}
               onChange={(avatar) => set("profile", { ...profile, avatar })}
             />
             <LocalizedField
@@ -376,7 +378,7 @@ export function Editor({ initialContent, initialBackups }: { initialContent: Con
                           label="Gambar"
                           kind="image"
                           value={shot.file}
-                          hint="PNG, JPG atau WebP, maksimal 5MB. Lebar sekitar 1600 px sudah cukup."
+                          hint={`PNG, JPG atau WebP, maksimal ${MAX_UPLOAD_MB}MB. Lebar sekitar 1600 px sudah cukup.`}
                           onChange={(file) => updateShot({ ...shot, file })}
                         />
                         <LocalizedField label="Keterangan" value={shot.caption} onChange={(caption) => updateShot({ ...shot, caption })} />
@@ -500,7 +502,7 @@ export function Editor({ initialContent, initialBackups }: { initialContent: Con
                 <div className="field">
                   <span className="field-label">File (sertifikat, rapor, transkrip…)</span>
                   <span className="field-hint">
-                    Setiap file jadi satu tombol di website dan dibuka di popup. PDF, PNG, JPG atau WebP, maksimal 5MB.
+                    Setiap file jadi satu tombol di website dan dibuka di popup. PDF, PNG, JPG atau WebP, maksimal {MAX_UPLOAD_MB}MB.
                   </span>
                   <ListEditor
                     items={item.files}

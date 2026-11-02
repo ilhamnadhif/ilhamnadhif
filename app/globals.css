@@ -374,6 +374,12 @@ blockquote cite {
   object-fit: contain;
 }
 
+/* A hairline edge keeps white logo tiles visible on the paper background. */
+img.icon {
+  outline: 1px solid var(--border);
+  outline-offset: -1px;
+}
+
 .icon-list .title {
   margin-bottom: var(--space-8);
   font-weight: 600;
