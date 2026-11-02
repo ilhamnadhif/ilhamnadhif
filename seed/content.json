@@ -45,12 +45,12 @@
         "id": "Teknologi"
       },
       "body": {
-        "en": "Go is my main language. Around it I use PostgreSQL for data, Redis, and NSQ for asynchronous workflows, and I ship services with Docker and CI/CD pipelines. Outside work, I build native desktop tools in Rust together with Claude, an AI coding assistant.",
-        "id": "Go adalah bahasa utama saya. Di sekitarnya saya memakai PostgreSQL untuk data, Redis, dan NSQ untuk alur kerja asinkron, lalu merilis layanan dengan Docker dan pipeline CI/CD. Di luar pekerjaan, saya membuat aplikasi desktop native dengan Rust bersama Claude, asisten AI untuk coding."
+        "en": "Go is my main language. Around it I use PostgreSQL for data, Redis, and NSQ for asynchronous workflows, and I ship services through CI/CD pipelines: GitLab CI with PM2 at work, Docker for my own projects. Outside work, I build native desktop tools in Rust together with Claude, an AI coding assistant.",
+        "id": "Go adalah bahasa utama saya. Di sekitarnya saya memakai PostgreSQL untuk data, Redis, dan NSQ untuk alur kerja asinkron, lalu merilis layanan lewat pipeline CI/CD: GitLab CI dengan PM2 di kantor, Docker untuk project pribadi. Di luar pekerjaan, saya membuat aplikasi desktop native dengan Rust bersama Claude, asisten AI untuk coding."
       },
       "tags": {
-        "en": "Go, PostgreSQL, Redis, NSQ, Docker, CI/CD, REST API, Clean Architecture, Linux, Git",
-        "id": "Go, PostgreSQL, Redis, NSQ, Docker, CI/CD, REST API, Clean Architecture, Linux, Git"
+        "en": "Go, PostgreSQL, Redis, NSQ, GitLab CI, PM2, Docker, CI/CD, REST API, Clean Architecture, Linux, Git",
+        "id": "Go, PostgreSQL, Redis, NSQ, GitLab CI, PM2, Docker, CI/CD, REST API, Clean Architecture, Linux, Git"
       }
     }
   ],
@@ -70,8 +70,8 @@
         "id": "Penempatan di PT LinkIT 360, Jakarta"
       },
       "description": {
-        "en": "- Build Go backend services for mobile value-added services (VAS) with telecom operators abroad, such as LTC and TPLUS.\n- Integrate Direct Carrier Billing (DCB) payment flows, so subscribers pay with their mobile balance.\n- Turn business requirements into maintainable APIs and dependable backend integrations.",
-        "id": "- Membangun layanan backend dengan Go untuk layanan VAS (value-added services) bersama operator telekomunikasi luar negeri, seperti LTC dan TPLUS.\n- Mengintegrasikan alur pembayaran Direct Carrier Billing (DCB), sehingga pelanggan membayar dengan pulsa.\n- Menerjemahkan kebutuhan bisnis menjadi API yang mudah dirawat dan integrasi backend yang andal."
+        "en": "- Build Go backend services for mobile value-added services (VAS) with telecom operators abroad, such as LTC and TPLUS.\n- Integrate Direct Carrier Billing (DCB) payment flows, so subscribers pay with their mobile balance.\n- Rebuilt the subscription renewal system: renewals that used to run one by one now run in batches across a pool of workers.\n- Set up GitLab CI/CD pipelines for every service, deploying to servers that run the services under PM2.\n- Turn business requirements into maintainable APIs and dependable backend integrations.",
+        "id": "- Membangun layanan backend dengan Go untuk layanan VAS (value-added services) bersama operator telekomunikasi luar negeri, seperti LTC dan TPLUS.\n- Mengintegrasikan alur pembayaran Direct Carrier Billing (DCB), sehingga pelanggan membayar dengan pulsa.\n- Membangun ulang sistem renewal langganan: renewal yang sebelumnya diproses satu per satu secara berurutan kini diproses per batch oleh sekumpulan worker.\n- Menyiapkan pipeline CI/CD dengan GitLab CI untuk semua layanan, dengan deploy ke server yang menjalankan layanan lewat PM2.\n- Menerjemahkan kebutuhan bisnis menjadi API yang mudah dirawat dan integrasi backend yang andal."
       },
       "logo": "/uploads/logo-lumoshive.webp",
       "url": ""
