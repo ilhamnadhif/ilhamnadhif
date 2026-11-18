@@ -4,7 +4,7 @@ const text = (max = 4000) => z.string().trim().max(max);
 
 const localized = (max = 4000) => z.object({ en: text(max), id: text(max) });
 
-/** Path to a file in the upload store, or "" when nothing is set. */
+/** Path to a file in public/uploads, or "" when nothing is set. */
 const upload = z
   .string()
   .regex(/^(|\/uploads\/[a-z0-9-]+\.(png|jpe?g|webp|svg|pdf))$/, "Invalid upload path");

@@ -1,0 +1,528 @@
+{
+  "profile": {
+    "name": "Muhammad Ilham Nadhif",
+    "initials": "MI",
+    "avatar": "/uploads/avatar.jpg",
+    "headline": {
+      "en": "Backend Developer",
+      "id": "Backend Developer"
+    },
+    "subtitle": {
+      "en": "I'm Ilham, a Go developer by day and a vibe-coding enjoyer by night. At work I build backend services and carrier billing for telecom operators; after hours I ship native desktop apps in Rust with Claude.",
+      "id": "Saya Ilham, developer Go di siang hari dan penikmat vibe coding di malam hari. Di kantor saya membangun layanan backend dan carrier billing untuk operator telekomunikasi; di luar jam kerja saya merilis aplikasi desktop native dengan Rust bersama Claude."
+    },
+    "location": {
+      "en": "Bogor, West Java, Indonesia",
+      "id": "Bogor, Jawa Barat, Indonesia"
+    },
+    "email": "m.ilhamnadhif121@gmail.com",
+    "cv": ""
+  },
+  "links": {
+    "linkedin": "https://www.linkedin.com/in/muhammad-ilham-nadhif-a5b9b6203/",
+    "github": "https://github.com/ilhamnadhif"
+  },
+  "about": [
+    {
+      "id": "background",
+      "title": {
+        "en": "Background",
+        "id": "Latar Belakang"
+      },
+      "body": {
+        "en": "I started out building REST APIs and web applications with Node.js, PostgreSQL, and MongoDB, first as an intern and then through the Binar Academy Full-Stack Developer Bootcamp. Soon after, I moved to Go, working on an internal system at Digital Waqf Ventures (WAVE) with Redis and Clean Architecture, while learning microservices on my own.\n\nSince 2022 I have been at Lumoshive, placed at PT LinkIT 360, building Go backend services for mobile value-added services (VAS) and carrier billing with telecom operators abroad, such as LTC and TPLUS. Alongside work, I am pursuing a Bachelor of Computer Science in Informatics Engineering at Universitas Indraprasta PGRI.",
+        "id": "Saya memulai dengan membangun REST API dan aplikasi web menggunakan Node.js, PostgreSQL, dan MongoDB, pertama sebagai siswa magang, lalu lewat Bootcamp Full-Stack Developer di Binar Academy. Tidak lama kemudian saya pindah ke Go dan ikut mengembangkan sistem internal di Digital Waqf Ventures (WAVE) dengan Redis dan Clean Architecture, sambil belajar microservices secara mandiri.\n\nSejak 2022 saya bekerja di Lumoshive dengan penempatan di PT LinkIT 360, membangun layanan backend dengan Go untuk layanan VAS (value-added services) dan carrier billing bersama operator telekomunikasi luar negeri, seperti LTC dan TPLUS. Sambil bekerja, saya menempuh S1 Teknik Informatika di Universitas Indraprasta PGRI."
+      },
+      "tags": {
+        "en": "",
+        "id": ""
+      }
+    },
+    {
+      "id": "stack",
+      "title": {
+        "en": "Stack",
+        "id": "Teknologi"
+      },
+      "body": {
+        "en": "Go is my main language. Around it I use PostgreSQL for data, Redis, and NSQ for asynchronous workflows, and I ship services through CI/CD pipelines: GitLab CI with PM2 at work, Docker for my own projects. Outside work, I build native desktop tools in Rust together with Claude, an AI coding assistant.",
+        "id": "Go adalah bahasa utama saya. Di sekitarnya saya memakai PostgreSQL untuk data, Redis, dan NSQ untuk alur kerja asinkron, lalu merilis layanan lewat pipeline CI/CD: GitLab CI dengan PM2 di kantor, Docker untuk project pribadi. Di luar pekerjaan, saya membuat aplikasi desktop native dengan Rust bersama Claude, asisten AI untuk coding."
+      },
+      "tags": {
+        "en": "Go, PostgreSQL, Redis, NSQ, GitLab CI, PM2, Docker, CI/CD, REST API, Clean Architecture, Linux, Git",
+        "id": "Go, PostgreSQL, Redis, NSQ, GitLab CI, PM2, Docker, CI/CD, REST API, Clean Architecture, Linux, Git"
+      }
+    }
+  ],
+  "testimonials": [],
+  "work": [
+    {
+      "id": "lumoshive",
+      "company": "Lumoshive",
+      "role": {
+        "en": "Backend Developer",
+        "id": "Backend Developer"
+      },
+      "start": "2022-08",
+      "end": "",
+      "location": {
+        "en": "Placed at PT LinkIT 360, Jakarta",
+        "id": "Penempatan di PT LinkIT 360, Jakarta"
+      },
+      "description": {
+        "en": "- Build Go backend services for mobile value-added services (VAS) with telecom operators abroad, such as LTC and TPLUS.\n- Integrate Direct Carrier Billing (DCB) payment flows, so subscribers pay with their mobile balance.\n- Rebuilt the subscription renewal system: renewals that used to run one by one now run in batches across a pool of workers.\n- Set up GitLab CI/CD pipelines for every service, deploying to servers that run the services under PM2.\n- Turn business requirements into maintainable APIs and dependable backend integrations.",
+        "id": "- Membangun layanan backend dengan Go untuk layanan VAS (value-added services) bersama operator telekomunikasi luar negeri, seperti LTC dan TPLUS.\n- Mengintegrasikan alur pembayaran Direct Carrier Billing (DCB), sehingga pelanggan membayar dengan pulsa.\n- Membangun ulang sistem renewal langganan: renewal yang sebelumnya diproses satu per satu secara berurutan kini diproses per batch oleh sekumpulan worker.\n- Menyiapkan pipeline CI/CD dengan GitLab CI untuk semua layanan, dengan deploy ke server yang menjalankan layanan lewat PM2.\n- Menerjemahkan kebutuhan bisnis menjadi API yang mudah dirawat dan integrasi backend yang andal."
+      },
+      "logo": "/uploads/logo-lumoshive.webp",
+      "url": ""
+    },
+    {
+      "id": "wave",
+      "company": "Digital Waqf Ventures (WAVE)",
+      "role": {
+        "en": "Golang Developer",
+        "id": "Golang Developer"
+      },
+      "start": "2022-04",
+      "end": "2022-07",
+      "location": {
+        "en": "",
+        "id": ""
+      },
+      "description": {
+        "en": "Built an internal system in Go together with the team, working with Redis and applying Clean Architecture to keep the codebase maintainable.",
+        "id": "Bersama tim membangun sistem internal dengan Go, bekerja dengan Redis, serta menerapkan Clean Architecture agar kode tetap mudah dirawat."
+      },
+      "logo": "",
+      "url": ""
+    },
+    {
+      "id": "smk-intern",
+      "company": "SMK Raden Umar Said Kudus",
+      "role": {
+        "en": "Backend Developer Intern",
+        "id": "Backend Developer (Magang)"
+      },
+      "start": "2021-01",
+      "end": "2021-07",
+      "location": {
+        "en": "",
+        "id": ""
+      },
+      "description": {
+        "en": "Built a RESTful API for an e-learning platform with Node.js and PostgreSQL, and collaborated on a game portal project with Node.js and MongoDB.",
+        "id": "Membuat RESTful API untuk platform e-learning dengan Node.js dan PostgreSQL, serta berkolaborasi dalam project portal game dengan Node.js dan MongoDB."
+      },
+      "logo": "/uploads/logo-smkrus.webp",
+      "url": ""
+    }
+  ],
+  "projects": [
+    {
+      "id": "bantuin",
+      "name": "Bantuin AI",
+      "tagline": {
+        "en": "Telegram AI assistant for reminders and expenses",
+        "id": "Asisten AI di Telegram untuk pengingat dan catatan keuangan"
+      },
+      "description": {
+        "en": "A live, paid Telegram assistant for everyday users in Indonesia: write like a normal chat, and Bantuin remembers reminders, bills, medicine schedules and expenses. Built with a Go API and worker, PostgreSQL, Redis queues and QRIS payments.",
+        "id": "Asisten Telegram berbayar yang sudah live untuk pengguna sehari-hari di Indonesia: cukup tulis seperti chat biasa, Bantuin yang mengingat pengingat, tagihan, jadwal obat, dan pengeluaran. Dibangun dengan API dan worker Go, PostgreSQL, antrean Redis, dan pembayaran QRIS."
+      },
+      "tags": "Go, PostgreSQL, Redis, Asynq, Telegram Bot API, QRIS, Next.js, Docker",
+      "icon": "send",
+      "logo": "/uploads/bantuin-icon.webp",
+      "repo": "",
+      "homepage": "https://bantuinai.com",
+      "homepageLabel": {
+        "en": "bantuinai.com",
+        "id": "bantuinai.com"
+      },
+      "slug": "bantuin",
+      "details": {
+        "en": "Bantuin is a Telegram-first personal assistant for everyday users in Indonesia. People open the bot, press Start and write like a normal chat; Bantuin remembers reminders, bills and instalments, medicine schedules and expenses, and reads photos, PDFs and voice notes sent in the chat. It is a live product with a free plan and a paid plan settled over QRIS.\n\n- **Go backend**: an API, a background worker and an explicit migration job, all built from one codebase. PostgreSQL is the source of truth; Redis and Asynq run the queues and can always be rebuilt.\n- **Retries that never act twice**: creates, payments, calendar changes and automations carry idempotency keys, so a retried request returns the first result instead of doing the work again.\n- **Careful delivery**: a Telegram message that may or may not have arrived is recorded as uncertain instead of being resent blindly, so a reminder never shows up twice.\n- **QRIS payments**: through SumoPod, with one payment link per order and settlement by webhook.\n- **AI with guardrails**: one model reads each message and picks from an allowlist of tools, while a multimodal model (Xiaomi MiMo) reads images, documents, audio and video.\n- **Privacy by design**: attachments are read in memory and never stored, and logs never contain message content, tokens or payment secrets.\n- Recurring automations, Google Calendar sync and news summaries with source links, plus a Next.js dashboard. Deployed with Docker Compose behind Caddy, with encrypted database backups.",
+        "id": "Bantuin adalah asisten pribadi berbasis Telegram untuk pengguna sehari-hari di Indonesia. Pengguna cukup membuka bot, menekan Start, lalu menulis seperti chat biasa; Bantuin mengingat pengingat, tagihan dan cicilan, jadwal obat, serta pengeluaran, dan bisa membaca foto, PDF, dan pesan suara yang dikirim di chat. Bantuin sudah live dengan paket gratis dan paket berbayar lewat QRIS.\n\n- **Backend Go**: API, worker latar belakang, dan job migrasi terpisah, semuanya dari satu codebase. PostgreSQL menjadi sumber kebenaran; Redis dan Asynq menjalankan antrean dan selalu bisa dibangun ulang.\n- **Retry yang tidak pernah dobel**: pembuatan data, pembayaran, perubahan kalender, dan otomasi membawa idempotency key, sehingga request yang diulang mengembalikan hasil pertama, bukan mengerjakan ulang.\n- **Pengiriman yang hati-hati**: pesan Telegram yang belum pasti sampai dicatat sebagai tidak pasti, bukan dikirim ulang begitu saja, sehingga pengingat tidak pernah datang dua kali.\n- **Pembayaran QRIS**: lewat SumoPod, dengan satu link pembayaran per pesanan dan penyelesaian lewat webhook.\n- **AI dengan batasan**: satu model membaca setiap pesan dan memilih dari daftar tool yang diizinkan, sementara model multimodal (Xiaomi MiMo) membaca gambar, dokumen, audio, dan video.\n- **Privasi sejak awal**: lampiran dibaca di memori dan tidak pernah disimpan, dan log tidak pernah berisi isi pesan, token, atau rahasia pembayaran.\n- Otomasi berulang, sinkronisasi Google Calendar, dan ringkasan berita dengan tautan sumber, ditambah dashboard Next.js. Di-deploy dengan Docker Compose di belakang Caddy, dengan backup database terenkripsi."
+      },
+      "screenshots": [
+        {
+          "id": "home",
+          "file": "/uploads/bantuin-home.webp",
+          "caption": {
+            "en": "Landing page: write once, Bantuin remembers",
+            "id": "Halaman utama: bilang sekali, Bantuin yang ingat"
+          }
+        },
+        {
+          "id": "features",
+          "file": "/uploads/bantuin-features.webp",
+          "caption": {
+            "en": "Reminders, bills, medicine schedules and expenses in one chat",
+            "id": "Pengingat, tagihan, jadwal obat, dan pengeluaran dalam satu chat"
+          }
+        },
+        {
+          "id": "compare",
+          "file": "/uploads/bantuin-compare.webp",
+          "caption": {
+            "en": "Unlike a plain chatbot, the reminder arrives on its own",
+            "id": "Beda dengan chatbot biasa, pengingatnya datang sendiri"
+          }
+        },
+        {
+          "id": "pricing",
+          "file": "/uploads/bantuin-pricing.webp",
+          "caption": {
+            "en": "A free plan and Bantuin Plus, paid over QRIS",
+            "id": "Paket gratis dan Bantuin Plus, dibayar lewat QRIS"
+          }
+        }
+      ]
+    },
+    {
+      "id": "opp-management",
+      "name": "OPP Management",
+      "tagline": {
+        "en": "Attendance and site operations app",
+        "id": "Aplikasi absensi dan operasional lapangan"
+      },
+      "description": {
+        "en": "A server-rendered Go web app built for Orecon Putra Perkasa: clock in and out with camera and location, leave approvals, and daily site reports for production, fuel and heavy-equipment hour meters, stored in Google Sheets.",
+        "id": "Aplikasi web Go server-rendered untuk Orecon Putra Perkasa: absen masuk dan pulang dengan kamera dan lokasi, persetujuan cuti, serta laporan harian lapangan untuk produksi, BBM, dan hour meter alat berat, tersimpan di Google Sheets."
+      },
+      "tags": "Go, HTML Templates, JavaScript, Google Sheets API, Docker",
+      "icon": "app-window",
+      "logo": "/uploads/opp-management-icon.webp",
+      "repo": "https://github.com/ilhamnadhif/oop-management",
+      "homepage": "",
+      "homepageLabel": {
+        "en": "",
+        "id": ""
+      },
+      "slug": "opp-management",
+      "details": {
+        "en": "OPP Management is the attendance and field operations app built for the teams of Orecon Putra Perkasa. It is a server-rendered Go application with HTML templates and plain JavaScript, so it stays light on phones in the field, and it keeps its data in Google Sheets that the office already works with.\n\n- **Clock in and out** with the phone camera and browser location; selfies are compressed before they are stored.\n- **Leave requests** for every role, editable or cancellable while pending, with supporting evidence for sick leave, plus an HR overview and approvals for HR and management.\n- **Production reports**: production, units, receipts and reconciliation, report exports, and receipt scanning that turns a photo of a receipt into editable line items with an AI vision model.\n- **Fuel in and out**: vendor deliveries with four photos as proof, and refuelling per machine from flow-meter readings, with litres computed from the difference.\n- **Hour meter input** per shift and unit, where the rest of the shift must be split into standby and breakdown minutes.\n- **Google Sheets as the database**, with the schema created and checked at startup, bcrypt passwords and recorded logins.",
+        "id": "OPP Management adalah aplikasi absensi dan operasional lapangan yang dibangun untuk tim Orecon Putra Perkasa. Aplikasinya server-rendered dengan Go, template HTML, dan JavaScript biasa, sehingga tetap ringan di HP di lapangan, dan datanya tersimpan di Google Sheets yang sudah dipakai kantor.\n\n- **Absen masuk dan pulang** dengan kamera HP dan lokasi browser; foto selfie dikompresi sebelum disimpan.\n- **Pengajuan cuti** untuk semua role, bisa diubah atau dibatalkan selama menunggu, dengan bukti pendukung untuk cuti sakit, ditambah ringkasan HR dan persetujuan untuk HR dan manajemen.\n- **Laporan produksi**: produksi, unit, nota dan rekonsiliasi, ekspor laporan, serta scan struk yang mengubah foto struk menjadi daftar barang yang bisa diedit dengan model AI visual.\n- **BBM masuk dan keluar**: kiriman vendor dengan empat foto bukti, dan pengisian per alat berat dari pembacaan flow meter, dengan liter dihitung dari selisihnya.\n- **Input hour meter** per shift dan unit, dengan sisa waktu shift wajib dipecah ke menit standby dan breakdown.\n- **Google Sheets sebagai database**, dengan skema yang dibuat dan diperiksa saat aplikasi start, password bcrypt, dan pencatatan login."
+      },
+      "screenshots": [
+        {
+          "id": "login",
+          "file": "/uploads/opp-management-login.webp",
+          "caption": {
+            "en": "Sign-in page, with registration for new employees",
+            "id": "Halaman masuk, dengan pendaftaran untuk karyawan baru"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ternarycode",
+      "name": "TernaryCode",
+      "tagline": {
+        "en": "One window for your projects and AI coding agents",
+        "id": "Satu jendela untuk semua project dan AI coding agent"
+      },
+      "description": {
+        "en": "A native, terminal-first workspace for macOS, Windows and Linux, written in Rust. Every project gets its own terminals, and the app shows at a glance which AI coding agent (Claude Code, Codex, Antigravity CLI or OpenCode) is waiting for you.",
+        "id": "Workspace native berbasis terminal untuk macOS, Windows, dan Linux, ditulis dengan Rust. Setiap project punya terminalnya sendiri, dan aplikasinya menunjukkan sekilas AI coding agent mana (Claude Code, Codex, Antigravity CLI, atau OpenCode) yang sedang menunggu Anda."
+      },
+      "tags": "Rust, egui, alacritty_terminal, wry, AI agents, Cross-platform",
+      "icon": "code",
+      "logo": "/uploads/ternarycode-icon.webp",
+      "repo": "https://github.com/ilhamnadhif/ternarycode",
+      "homepage": "https://ilhamnadhif.github.io/ternarycode/",
+      "homepageLabel": {
+        "en": "Website",
+        "id": "Situs web"
+      },
+      "slug": "ternarycode",
+      "details": {
+        "en": "Running several AI coding agents in several projects usually means several windows and no idea which agent is waiting for you. TernaryCode puts every project in one window, each with its own terminals, tabs and splits. It is one small native app with no Electron: it opens in about 0.2 s, idles at 0% CPU, and ten panes take around 70 MB.\n\n- **Know which agent needs you**: Needs input, Running, Done and Failed come from the agents’ own hooks, never a guess, and one shortcut jumps to the most urgent one.\n- **Every project in one window**, plus a **Grid** that shows them all live.\n- **A browser your agents can use**: an agent opens your dev server beside its terminal, clicks through it and reads the console while you watch, and you can take over at any time.\n- **Code beside the agent**: the files it changed, the lines it touched, and your language servers.\n- **Review** what an agent changed, and give each agent **a git worktree** of its own.\n- **Documents in place**: PDF, Word, PowerPoint, Excel, CSV and images.\n- Runs on macOS, Windows and Linux, with no account and no telemetry.",
+        "id": "Menjalankan beberapa AI coding agent di beberapa project biasanya berarti banyak jendela dan tidak tahu agent mana yang sedang menunggu Anda. TernaryCode menaruh semua project dalam satu jendela, masing-masing dengan terminal, tab, dan split-nya sendiri. Satu aplikasi native yang kecil, tanpa Electron: terbuka dalam sekitar 0,2 detik, CPU 0% saat diam, dan sepuluh pane hanya memakai sekitar 70 MB.\n\n- **Tahu agent mana yang butuh Anda**: status Needs input, Running, Done, dan Failed berasal dari hook milik agent itu sendiri, bukan tebakan, dan satu shortcut langsung membawa Anda ke yang paling mendesak.\n- **Semua project dalam satu jendela**, ditambah **Grid** yang menampilkan semuanya secara live.\n- **Browser yang bisa dipakai agent**: agent membuka dev server Anda di samping terminalnya, mengklik halamannya, dan membaca console sementara Anda melihat, dan Anda bisa mengambil alih kapan saja.\n- **Kode di samping agent**: file yang diubahnya, baris yang disentuhnya, dan language server Anda.\n- **Review** perubahan dari agent, dan beri setiap agent **git worktree** sendiri.\n- **Dokumen langsung terbuka**: PDF, Word, PowerPoint, Excel, CSV, dan gambar.\n- Berjalan di macOS, Windows, dan Linux, tanpa akun dan tanpa telemetri."
+      },
+      "screenshots": [
+        {
+          "id": "focus",
+          "file": "/uploads/ternarycode-focus.webp",
+          "caption": {
+            "en": "An agent checks its change in the Browser panel beside its terminal; the sidebar lists the agents waiting in other projects",
+            "id": "Agent memeriksa perubahannya di panel Browser di samping terminalnya; sidebar menampilkan agent yang menunggu di project lain"
+          }
+        },
+        {
+          "id": "grid",
+          "file": "/uploads/ternarycode-grid.webp",
+          "caption": {
+            "en": "The Grid: six projects side by side, two agents waiting for permission and one done",
+            "id": "Grid: enam project berdampingan, dua agent menunggu izin dan satu selesai"
+          }
+        },
+        {
+          "id": "editor",
+          "file": "/uploads/ternarycode-editor.webp",
+          "caption": {
+            "en": "The Code drawer: the file Claude Code changed, its changed lines marked, beside the agent",
+            "id": "Laci Code: file yang diubah Claude Code, baris yang berubah ditandai, di samping agent-nya"
+          }
+        },
+        {
+          "id": "docs",
+          "file": "/uploads/ternarycode-docs.webp",
+          "caption": {
+            "en": "A CSV report open as a table beside Codex",
+            "id": "Laporan CSV terbuka sebagai tabel di samping Codex"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ternaryshell",
+      "name": "TernaryShell",
+      "tagline": {
+        "en": "Lightweight SSH & SFTP client",
+        "id": "Klien SSH & SFTP yang ringan"
+      },
+      "description": {
+        "en": "A native SSH and SFTP client for macOS, Windows and Linux, written entirely in Rust. It starts in about 0.1 s and comes with tabs, split panes, dual-pane SFTP and a remote file editor.",
+        "id": "Klien SSH dan SFTP native untuk macOS, Windows, dan Linux, yang seluruhnya ditulis dengan Rust. Terbuka dalam sekitar 0,1 detik, dengan tab, split pane, SFTP dua panel, dan editor file remote."
+      },
+      "tags": "Rust, egui, SSH, SFTP, Cross-platform",
+      "icon": "terminal",
+      "logo": "/uploads/ternaryshell-icon.webp",
+      "repo": "https://github.com/ilhamnadhif/ternaryshell",
+      "homepage": "https://ilhamnadhif.github.io/ternaryshell/",
+      "homepageLabel": {
+        "en": "Website",
+        "id": "Situs web"
+      },
+      "slug": "ternaryshell",
+      "details": {
+        "en": "TernaryShell is a native replacement for Electron-based SSH clients such as Electerm: one small binary, no Chromium, no Node.js. It starts in about 0.1 s, idles at 0% CPU and uses around 70 MB of memory with a session open.\n\n- **Saved connections** in nested groups, with fuzzy search and quick connect. Passwords stay in the system keychain, not in TernaryShell's files.\n- **A real terminal** built on alacritty_terminal, with 24-bit colour and mouse support for vim, htop and tmux, plus tabs and split panes that share one SSH connection.\n- **Dual-pane SFTP** that transfers many files in the background, with progress, speed and time left. Folders transfer recursively and permissions are kept.\n- **Remote file editor**: change a config on the server and save it in place.\n- **Notices dead connections** after the network changes and offers to reconnect instead of hanging.\n- **Careful with your servers**: strict host-key checking, and transfers that never leave half-written files behind.\n- **Import** from Electerm and ~/.ssh/config, and one-click updates from GitHub releases.\n- Runs on macOS, Windows and Linux, in English and Indonesian, with light and dark themes.",
+        "id": "TernaryShell adalah pengganti native untuk klien SSH berbasis Electron seperti Electerm: satu binary kecil, tanpa Chromium, tanpa Node.js. Terbuka dalam sekitar 0,1 detik, CPU 0% saat diam, dan memakai sekitar 70 MB memori dengan satu sesi terbuka.\n\n- **Koneksi tersimpan** dalam grup bertingkat, dengan pencarian fuzzy dan quick connect. Password disimpan di keychain sistem, bukan di file TernaryShell.\n- **Terminal sungguhan** berbasis alacritty_terminal, dengan warna 24-bit dan dukungan mouse untuk vim, htop, dan tmux, serta tab dan split pane yang berbagi satu koneksi SSH.\n- **SFTP dua panel** yang mentransfer banyak file di latar belakang, lengkap dengan progres, kecepatan, dan sisa waktu. Folder ditransfer rekursif dan permission tetap terjaga.\n- **Editor file remote**: ubah config di server lalu simpan langsung di tempat.\n- **Mendeteksi koneksi mati** setelah jaringan berubah dan menawarkan reconnect, bukan menggantung.\n- **Hati-hati dengan server Anda**: pemeriksaan host key yang ketat, dan transfer yang tidak pernah meninggalkan file setengah jadi.\n- **Impor** dari Electerm dan ~/.ssh/config, serta update sekali klik dari rilis GitHub.\n- Berjalan di macOS, Windows, dan Linux, dalam bahasa Inggris dan Indonesia, dengan tema terang dan gelap."
+      },
+      "screenshots": [
+        {
+          "id": "terminal",
+          "file": "/uploads/ternaryshell-terminal.webp",
+          "caption": {
+            "en": "Saved connections, tabs and split panes over one SSH connection",
+            "id": "Koneksi tersimpan, tab, dan split pane di atas satu koneksi SSH"
+          }
+        },
+        {
+          "id": "sftp",
+          "file": "/uploads/ternaryshell-sftp.webp",
+          "caption": {
+            "en": "Dual-pane SFTP with the transfers popup",
+            "id": "SFTP dua panel dengan popup transfer"
+          }
+        },
+        {
+          "id": "editor",
+          "file": "/uploads/ternaryshell-editor.webp",
+          "caption": {
+            "en": "Editing a YAML config on the server",
+            "id": "Mengedit config YAML di server"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ternarywire",
+      "name": "TernaryWire",
+      "tagline": {
+        "en": "Native API client, a Postman alternative",
+        "id": "Klien API native, alternatif Postman"
+      },
+      "description": {
+        "en": "A lightweight API client written entirely in Rust. It handles HTTP, GraphQL, gRPC, WebSocket, Socket.IO, MQTT, MCP and AI requests, with Postman-compatible collections and scripts and a newman-compatible CLI.",
+        "id": "Klien API ringan yang seluruhnya ditulis dengan Rust. Mendukung request HTTP, GraphQL, gRPC, WebSocket, Socket.IO, MQTT, MCP, dan AI, dengan koleksi dan skrip yang kompatibel dengan Postman serta CLI yang kompatibel dengan newman."
+      },
+      "tags": "Rust, egui, HTTP, GraphQL, gRPC, WebSocket, MQTT, CLI",
+      "icon": "send",
+      "logo": "/uploads/ternarywire-icon.webp",
+      "repo": "https://github.com/ilhamnadhif/ternarywire",
+      "homepage": "https://ilhamnadhif.github.io/ternarywire/",
+      "homepageLabel": {
+        "en": "Website",
+        "id": "Situs web"
+      },
+      "slug": "ternarywire",
+      "details": {
+        "en": "TernaryWire is a native alternative to Postman: one small binary, no Electron, no Node.js, no account. It draws its first frame in about 40 ms, uses under 90 MB of memory and streams a 100 MB response to disk instead of into memory. Collections are plain JSON files in a folder you can commit to Git.\n\n- **HTTP, GraphQL, gRPC, WebSocket, Socket.IO, MQTT, SOAP, MCP and AI requests** in one app, each with its own tab, message log and scripts.\n- **Postman compatible**: collections, environments and pm.* scripts import and run unchanged for common use; a corpus of 50 realistic Postman scripts passes 50 out of 50.\n- **Collection Runner and CLI** with data files, JUnit/HTML/JSON reports and newman-compatible options, so it can replace newman in CI. Performance tests with virtual users.\n- **Flows**: a visual canvas that chains requests, conditions, loops, parallel branches, scripts and AI calls.\n- **Spec Hub** for OpenAPI, AsyncAPI, Protobuf, GraphQL and Smithy files, with live validation and a live docs preview.\n- A local **mock server, webhook listener and capture proxy**, and twelve auth types from Basic and OAuth 2.0 to AWS SigV4.\n- Runs on macOS, Windows and Linux, in English and Indonesian, with light and dark themes.",
+        "id": "TernaryWire adalah alternatif native untuk Postman: satu binary kecil, tanpa Electron, tanpa Node.js, tanpa akun. Frame pertamanya tampil dalam sekitar 40 ms, memakai kurang dari 90 MB memori, dan respons 100 MB dialirkan ke disk, bukan ke memori. Koleksi berupa file JSON biasa di folder yang bisa di-commit ke Git.\n\n- **Request HTTP, GraphQL, gRPC, WebSocket, Socket.IO, MQTT, SOAP, MCP, dan AI** dalam satu aplikasi, masing-masing dengan tab, log pesan, dan skrip sendiri.\n- **Kompatibel dengan Postman**: koleksi, environment, dan skrip pm.* bisa diimpor dan dijalankan tanpa diubah untuk pemakaian umum; korpus 50 skrip Postman realistis lulus 50 dari 50.\n- **Collection Runner dan CLI** dengan file data, laporan JUnit/HTML/JSON, dan opsi yang kompatibel dengan newman, sehingga bisa menggantikan newman di CI. Juga ada tes performa dengan virtual user.\n- **Flows**: kanvas visual untuk merangkai request, kondisi, loop, cabang paralel, skrip, dan panggilan AI.\n- **Spec Hub** untuk file OpenAPI, AsyncAPI, Protobuf, GraphQL, dan Smithy, dengan validasi dan pratinjau dokumentasi secara langsung.\n- **Mock server, listener webhook, dan capture proxy** lokal, serta dua belas jenis autentikasi dari Basic dan OAuth 2.0 sampai AWS SigV4.\n- Berjalan di macOS, Windows, dan Linux, dalam bahasa Inggris dan Indonesia, dengan tema terang dan gelap."
+      },
+      "screenshots": [
+        {
+          "id": "hero",
+          "file": "/uploads/ternarywire-hero.webp",
+          "caption": {
+            "en": "A collection, a request and its response with test results",
+            "id": "Koleksi, request, dan respons beserta hasil tes"
+          }
+        },
+        {
+          "id": "runner",
+          "file": "/uploads/ternarywire-runner.webp",
+          "caption": {
+            "en": "Collection Runner: 10 requests, 17 tests passed",
+            "id": "Collection Runner: 10 request, 17 tes lulus"
+          }
+        },
+        {
+          "id": "flows",
+          "file": "/uploads/ternarywire-flows.webp",
+          "caption": {
+            "en": "A flow with three requests in parallel, a join and an AI summary",
+            "id": "Flow dengan tiga request paralel, join, dan ringkasan AI"
+          }
+        },
+        {
+          "id": "spec-hub",
+          "file": "/uploads/ternarywire-spec-hub.webp",
+          "caption": {
+            "en": "Spec Hub: an OpenAPI file next to its live documentation",
+            "id": "Spec Hub: file OpenAPI di samping dokumentasinya"
+          }
+        },
+        {
+          "id": "socketio",
+          "file": "/uploads/ternarywire-socketio.webp",
+          "caption": {
+            "en": "A Socket.IO session: connected, ticks and an echoed message in the log",
+            "id": "Sesi Socket.IO: terhubung, event tick, dan pesan yang dipantulkan di log"
+          }
+        },
+        {
+          "id": "dark",
+          "file": "/uploads/ternarywire-dark.webp",
+          "caption": {
+            "en": "Dark theme",
+            "id": "Tema gelap"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ternarygrid",
+      "name": "TernaryGrid",
+      "tagline": {
+        "en": "SQL database client, a DBeaver alternative",
+        "id": "Klien database SQL, alternatif DBeaver"
+      },
+      "description": {
+        "en": "A lightweight database client for macOS, Windows and Linux, written entirely in Rust. It connects to PostgreSQL, MySQL, SQLite, SQL Server, Oracle, ClickHouse, Redis, MongoDB and more.",
+        "id": "Klien database ringan untuk macOS, Windows, dan Linux, yang seluruhnya ditulis dengan Rust. Bisa terhubung ke PostgreSQL, MySQL, SQLite, SQL Server, Oracle, ClickHouse, Redis, MongoDB, dan lainnya."
+      },
+      "tags": "Rust, egui, PostgreSQL, MySQL, SQLite, ClickHouse, Redis, MongoDB",
+      "icon": "database",
+      "logo": "/uploads/ternarygrid-icon.webp",
+      "repo": "https://github.com/ilhamnadhif/ternarygrid",
+      "homepage": "https://github.com/ilhamnadhif/ternarygrid/releases/latest",
+      "homepageLabel": {
+        "en": "Download",
+        "id": "Unduh"
+      },
+      "slug": "ternarygrid",
+      "details": {
+        "en": "TernaryGrid is a native alternative to DBeaver: one small binary, no JVM, no Electron. It opens in about 0.1 s, idles at 0% CPU and uses around 90 MB of memory, and result sets of millions of rows never have to fit in memory.\n\n- **Many databases, one interface**: PostgreSQL, MySQL, MariaDB, SQLite, SQL Server, Oracle, CockroachDB, ClickHouse, Cassandra, Redis, MongoDB and Elasticsearch, all with drivers written in Rust, plus ready-made entries for compatible products such as Supabase, Neon and TiDB.\n- **SQL editor** with schema-aware autocomplete, parameters, a formatter, explain plans and a searchable query history.\n- **Data grid** that scrolls a million rows at under 1 ms per frame, with inline editing saved in one transaction and foreign key navigation.\n- **Safe by default**: production connection types, confirmations for DELETE or UPDATE without WHERE, and read-only connections.\n- **Connections** through SSH tunnels, proxies and SSL, with passwords in the system keychain or an encrypted vault.\n- ER diagrams, import and export, migration between databases, schema and data compare, and an optional AI assistant that knows the schema.\n- Runs on macOS, Windows and Linux, with light and dark themes.",
+        "id": "TernaryGrid adalah alternatif native untuk DBeaver: satu binary kecil, tanpa JVM, tanpa Electron. Terbuka dalam sekitar 0,1 detik, CPU 0% saat diam, memakai sekitar 90 MB memori, dan hasil query jutaan baris tidak perlu dimuat seluruhnya ke memori.\n\n- **Banyak database, satu antarmuka**: PostgreSQL, MySQL, MariaDB, SQLite, SQL Server, Oracle, CockroachDB, ClickHouse, Cassandra, Redis, MongoDB, dan Elasticsearch, semuanya dengan driver yang ditulis dengan Rust, ditambah entri siap pakai untuk produk yang kompatibel seperti Supabase, Neon, dan TiDB.\n- **Editor SQL** dengan autocomplete yang memahami skema, parameter, formatter, execution plan, dan riwayat query yang bisa dicari.\n- **Grid data** yang menggulir sejuta baris di bawah 1 ms per frame, dengan edit langsung yang disimpan dalam satu transaksi dan navigasi foreign key.\n- **Aman secara bawaan**: tipe koneksi production, konfirmasi untuk DELETE atau UPDATE tanpa WHERE, dan koneksi read-only.\n- **Koneksi** lewat SSH tunnel, proxy, dan SSL, dengan password di keychain sistem atau brankas terenkripsi.\n- Diagram ER, impor dan ekspor, migrasi antar database, perbandingan skema dan data, serta asisten AI opsional yang memahami skema.\n- Berjalan di macOS, Windows, dan Linux, dengan tema terang dan gelap."
+      },
+      "screenshots": [
+        {
+          "id": "editor",
+          "file": "/uploads/ternarygrid-editor.webp",
+          "caption": {
+            "en": "Navigator, SQL editor and result grid",
+            "id": "Navigator, editor SQL, dan grid hasil"
+          }
+        },
+        {
+          "id": "data",
+          "file": "/uploads/ternarygrid-data.webp",
+          "caption": {
+            "en": "A table's data with a server-side filter and ORDER BY",
+            "id": "Data tabel dengan filter dan ORDER BY di server"
+          }
+        },
+        {
+          "id": "er-diagram",
+          "file": "/uploads/ternarygrid-er-diagram.webp",
+          "caption": {
+            "en": "ER diagram of the sample database",
+            "id": "Diagram ER dari database contoh"
+          }
+        }
+      ]
+    }
+  ],
+  "education": [
+    {
+      "id": "unindra",
+      "school": "Universitas Indraprasta PGRI (UNINDRA)",
+      "degree": {
+        "en": "Bachelor of Computer Science, Informatics Engineering",
+        "id": "S1 Teknik Informatika"
+      },
+      "start": "2023",
+      "end": "",
+      "logo": "/uploads/logo-unindra.webp"
+    },
+    {
+      "id": "smk",
+      "school": "SMK Raden Umar Said Kudus",
+      "degree": {
+        "en": "Vocational High School Diploma, Software Engineering",
+        "id": "SMK, Rekayasa Perangkat Lunak"
+      },
+      "start": "2019",
+      "end": "2022",
+      "logo": "/uploads/logo-smkrus.webp"
+    }
+  ],
+  "certifications": [
+    {
+      "id": "binar",
+      "issuer": "Binar Academy",
+      "name": {
+        "en": "Full-Stack Web Bootcamp",
+        "id": "Bootcamp Full-Stack Web"
+      },
+      "start": "2021-01",
+      "end": "2021-07",
+      "description": {
+        "en": "A six-month Full-Stack Web program (11 chapters) with Node.js and React.js, run by Binar Academy together with SMK Raden Umar Said Kudus and supported by Djarum Foundation. Completed and graduated.",
+        "id": "Program Full-Stack Web selama enam bulan (11 chapter) dengan Node.js dan React.js, diselenggarakan Binar Academy bersama SMK Raden Umar Said Kudus dan didukung Djarum Foundation. Dinyatakan lulus."
+      },
+      "files": [
+        {
+          "id": "certificate",
+          "label": {
+            "en": "View certificate",
+            "id": "Lihat sertifikat"
+          },
+          "file": "/uploads/binar-certificate.webp"
+        },
+        {
+          "id": "report",
+          "label": {
+            "en": "View student report",
+            "id": "Lihat rapor"
+          },
+          "file": "/uploads/binar-student-report.webp"
+        }
+      ],
+      "url": "",
+      "logo": "/uploads/logo-binar.webp"
+    }
+  ],
+  "seo": {
+    "title": {
+      "en": "Muhammad Ilham Nadhif | Backend Developer",
+      "id": "Muhammad Ilham Nadhif | Backend Developer"
+    },
+    "description": {
+      "en": "Backend developer working with Go, payment integrations, and Direct Carrier Billing (DCB). Based in Bogor, Indonesia.",
+      "id": "Backend developer yang bekerja dengan Go, integrasi pembayaran, dan Direct Carrier Billing (DCB). Berbasis di Bogor, Indonesia."
+    }
+  }
+}

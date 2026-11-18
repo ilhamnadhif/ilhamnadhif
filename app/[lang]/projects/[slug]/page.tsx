@@ -1,9 +1,7 @@
-/* eslint-disable @next/next/no-img-element -- screenshots come from the upload store */
+/* eslint-disable @next/next/no-img-element -- screenshots are already-sized WebP files */
 import { ArrowLeft } from "lucide-react";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { connection } from "next/server";
-import { Suspense } from "react";
 import { Logo, ProjectLinks, SiteFooter } from "@/components/site/Home";
 import { icons } from "@/components/site/icons";
 import { MediaViewer } from "@/components/site/MediaViewer";
@@ -11,29 +9,28 @@ import { Nav } from "@/components/site/Nav";
 import { RichText, splitTags } from "@/components/site/RichText";
 import { projectSlug, type Project } from "@/lib/content/schema";
 import { getContent } from "@/lib/content/store";
-import { dictionary, hasLocale, locales, t, type Locale } from "@/lib/i18n";
+import { dictionary, hasLocale, t, type Locale } from "@/lib/i18n";
+import { SITE_URL, alternates, pagePath } from "@/lib/site";
 
 type Params = PageProps<"/[lang]/projects/[slug]">["params"];
 
-/** Projects live in the content file, so the slug is only known at request time. */
-export default function ProjectPage({ params }: PageProps<"/[lang]/projects/[slug]">) {
-  return (
-    <Suspense>
-      <ProjectDetail params={params} />
-    </Suspense>
-  );
+/** One page per project in each language, generated at build time. */
+export function generateStaticParams() {
+  return getContent().projects.map((project) => ({ slug: projectSlug(project) }));
 }
+
+// A slug that is not in the content is the 404 page.
+export const dynamicParams = false;
 
 async function findProject(params: Params) {
   const { lang, slug } = await params;
   if (!hasLocale(lang)) return null;
-  await connection();
-  const content = await getContent();
+  const content = getContent();
   const project = content.projects.find((item) => projectSlug(item) === slug);
   return project ? { lang, slug, content, project } : null;
 }
 
-async function ProjectDetail({ params }: { params: Params }) {
+export default async function ProjectPage({ params }: PageProps<"/[lang]/projects/[slug]">) {
   const found = await findProject(params);
   if (!found) notFound();
   const { lang, slug, content, project } = found;
@@ -48,7 +45,7 @@ async function ProjectDetail({ params }: { params: Params }) {
     <>
       <Nav lang={lang} path={`/projects/${slug}`} />
       <main className="page project-page" id="top">
-        <a href={`/${lang}#projects`} className="back-link">
+        <a href={`${pagePath(lang)}#projects`} className="back-link">
           <ArrowLeft aria-hidden />
           {dict.allProjects}
         </a>
@@ -126,21 +123,17 @@ export async function generateMetadata({ params }: PageProps<"/[lang]/projects/[
   const title = `${project.name}${tagline ? ` — ${tagline}` : ""} | ${content.profile.name}`;
   const description = t(project.description, lang);
   const cover = project.screenshots[0];
-  const siteUrl = process.env.SITE_URL;
 
   return {
-    ...(siteUrl && { metadataBase: new URL(siteUrl) }),
+    metadataBase: new URL(SITE_URL),
     title,
     description,
-    alternates: {
-      canonical: `/${lang}/projects/${slug}`,
-      languages: Object.fromEntries(locales.map((l) => [l, `/${l}/projects/${slug}`])),
-    },
+    alternates: alternates(lang, `/projects/${slug}`),
     openGraph: {
       type: "article",
       title,
       description,
-      url: `/${lang}/projects/${slug}`,
+      url: pagePath(lang, `/projects/${slug}`),
       siteName: content.profile.name,
       ...(cover && { images: [{ url: cover.file }] }),
     },

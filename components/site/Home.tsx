@@ -1,8 +1,9 @@
-/* eslint-disable @next/next/no-img-element -- uploads are small, already-sized files served from the data volume */
+/* eslint-disable @next/next/no-img-element -- images in public/uploads are small, already-sized files */
 import { ArrowRight, ArrowUpRight, Award, BriefcaseBusiness, FileDown, FileText, GraduationCap, Mail } from "lucide-react";
 import { Fragment } from "react";
 import { projectSlug, type Content, type Project } from "@/lib/content/schema";
 import { dictionary, formatPeriod, t, type Locale } from "@/lib/i18n";
+import { pagePath } from "@/lib/site";
 import { MediaViewer } from "./MediaViewer";
 import { GitHubMark, icons } from "./icons";
 import { RichText, splitTags } from "./RichText";
@@ -69,7 +70,7 @@ export function Home({ content, lang }: Props) {
                 const Icon = icons[project.icon];
                 const tags = splitTags(project.tags);
                 const tagline = t(project.tagline, lang);
-                const href = `/${lang}/projects/${projectSlug(project)}`;
+                const href = pagePath(lang, `/projects/${projectSlug(project)}`);
                 const cover = project.screenshots[0];
                 return (
                   <li key={project.id}>
@@ -190,7 +191,7 @@ function Hero({ content, lang }: Props) {
   const dict = dictionary[lang];
   return (
     <header className="hero">
-      <a href={`/${lang}`} className="avatar" aria-label={profile.name}>
+      <a href={pagePath(lang)} className="avatar" aria-label={profile.name}>
         {profile.avatar ? <img src={profile.avatar} alt="" width={96} height={96} /> : profile.initials}
       </a>
       <h1>{t(profile.headline, lang)}</h1>
@@ -270,7 +271,7 @@ export function SiteFooter({ content, lang }: Props) {
   return (
     <footer className="site-footer" id="contact">
       <div className="footer-links">
-        <a href={`/${lang}`}>{dict.nav.home}</a>
+        <a href={pagePath(lang)}>{dict.nav.home}</a>
         {links.linkedin && (
           <a href={links.linkedin} target="_blank" rel="noopener noreferrer">
             LinkedIn

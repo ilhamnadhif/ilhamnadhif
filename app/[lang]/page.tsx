@@ -1,40 +1,22 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { connection } from "next/server";
-import { Suspense } from "react";
 import { Home } from "@/components/site/Home";
 import { Nav } from "@/components/site/Nav";
 import { getContent } from "@/lib/content/store";
-import { hasLocale, locales, t, type Locale } from "@/lib/i18n";
+import { hasLocale, t } from "@/lib/i18n";
+import { SITE_URL, alternates, pagePath } from "@/lib/site";
 
-/**
- * Content lives in a JSON file that the dashboard edits at runtime, so it is
- * read on every request (from an in-memory copy that refreshes when the file
- * changes). The nav does not depend on it and ships in the prerendered shell.
- */
 export default async function Page({ params }: PageProps<"/[lang]">) {
   const { lang } = await params;
   if (!hasLocale(lang)) notFound();
-
-  return (
-    <>
-      <Nav lang={lang} />
-      <Suspense>
-        <Content lang={lang} />
-      </Suspense>
-    </>
-  );
-}
-
-async function Content({ lang }: { lang: Locale }) {
-  await connection();
-  const content = await getContent();
+  const content = getContent();
   const { profile, links } = content;
 
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Person",
     name: profile.name,
+    url: `${SITE_URL}${pagePath(lang)}`,
     jobTitle: t(profile.headline, lang),
     description: t(profile.subtitle, lang),
     address: t(profile.location, lang) || undefined,
@@ -44,6 +26,7 @@ async function Content({ lang }: { lang: Locale }) {
 
   return (
     <>
+      <Nav lang={lang} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }}
@@ -56,25 +39,20 @@ async function Content({ lang }: { lang: Locale }) {
 export async function generateMetadata({ params }: PageProps<"/[lang]">): Promise<Metadata> {
   const { lang } = await params;
   if (!hasLocale(lang)) return {};
-  await connection();
-  const { seo, profile } = await getContent();
+  const { seo, profile } = getContent();
   const title = t(seo.title, lang);
   const description = t(seo.description, lang);
-  const siteUrl = process.env.SITE_URL;
 
   return {
-    ...(siteUrl && { metadataBase: new URL(siteUrl) }),
+    metadataBase: new URL(SITE_URL),
     title,
     description,
-    alternates: {
-      canonical: `/${lang}`,
-      languages: Object.fromEntries(locales.map((l) => [l, `/${l}`])),
-    },
+    alternates: alternates(lang),
     openGraph: {
       type: "profile",
       title,
       description,
-      url: `/${lang}`,
+      url: pagePath(lang),
       siteName: profile.name,
       locale: lang === "id" ? "id_ID" : "en_US",
       ...(profile.avatar && { images: [{ url: profile.avatar }] }),

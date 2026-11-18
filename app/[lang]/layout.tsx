@@ -7,11 +7,14 @@ export function generateStaticParams() {
   return locales.map((lang) => ({ lang }));
 }
 
+// Only /en and /id exist; anything else is the 404 page.
+export const dynamicParams = false;
+
 export default async function SiteLayout({ children, params }: LayoutProps<"/[lang]">) {
   const { lang } = await params;
 
   return (
-    // Unknown languages get a 404 from the page; data-theme is set by the inline script before hydration.
+    // data-theme is set by the inline script before hydration.
     <html
       lang={hasLocale(lang) ? lang : defaultLocale}
       className={franklin.variable}

@@ -1,16 +1,14 @@
 import type { NextConfig } from "next";
-import { MAX_UPLOAD_BYTES } from "./lib/upload-limit";
 
 const nextConfig: NextConfig = {
-  cacheComponents: true,
-  partialPrefetching: true,
-  output: "standalone",
-  poweredByHeader: false,
+  // A static site in out/, published to GitHub Pages by .github/workflows/ci.yml.
+  output: "export",
+  // Every page becomes a folder with an index.html, which GitHub Pages serves as is.
+  trailingSlash: true,
   experimental: {
-    serverActions: {
-      // The upload action enforces the real cap; 1MB more leaves room for multipart overhead.
-      bodySizeLimit: MAX_UPLOAD_BYTES + 1024 * 1024,
-    },
+    // The site has two root layouts (/[lang] and the language picker at /), so the
+    // 404 page cannot come from either of them.
+    globalNotFound: true,
   },
 };
 
