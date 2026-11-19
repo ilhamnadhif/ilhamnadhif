@@ -12,16 +12,27 @@ export default async function Page({ params }: PageProps<"/[lang]">) {
   const content = getContent();
   const { profile, links } = content;
 
+  // The person, and the site itself: its name is the one search results show above it.
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "Person",
-    name: profile.name,
-    url: `${SITE_URL}${pagePath(lang)}`,
-    jobTitle: t(profile.headline, lang),
-    description: t(profile.subtitle, lang),
-    address: t(profile.location, lang) || undefined,
-    email: profile.email ? `mailto:${profile.email}` : undefined,
-    sameAs: [links.linkedin, links.github].filter(Boolean),
+    "@graph": [
+      {
+        "@type": "Person",
+        name: profile.name,
+        url: `${SITE_URL}${pagePath(lang)}`,
+        jobTitle: t(profile.headline, lang),
+        description: t(profile.subtitle, lang),
+        address: t(profile.location, lang) || undefined,
+        email: profile.email ? `mailto:${profile.email}` : undefined,
+        sameAs: [links.linkedin, links.github].filter(Boolean),
+      },
+      {
+        "@type": "WebSite",
+        name: profile.name,
+        url: `${SITE_URL}/`,
+        inLanguage: lang,
+      },
+    ],
   };
 
   return (

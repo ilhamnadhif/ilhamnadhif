@@ -40,10 +40,23 @@ export default async function ProjectPage({ params }: PageProps<"/[lang]/project
   const tags = splitTags(project.tags);
   const [cover, ...more] = project.screenshots;
   const viewerLabels = { openInNewTab: dict.openInNewTab, close: dict.close };
+  // Where the page sits in the site (home, then the project): search results show it so.
+  const breadcrumbs = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: content.profile.name, item: `${SITE_URL}${pagePath(lang)}` },
+      { "@type": "ListItem", position: 2, name: project.name, item: `${SITE_URL}${pagePath(lang, `/projects/${slug}`)}` },
+    ],
+  };
 
   return (
     <>
       <Nav lang={lang} path={`/projects/${slug}`} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbs).replace(/</g, "\\u003c") }}
+      />
       <main className="page project-page" id="top">
         <a href={`${pagePath(lang)}#projects`} className="back-link">
           <ArrowLeft aria-hidden />
